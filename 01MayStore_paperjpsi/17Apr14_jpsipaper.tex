@@ -1,0 +1,590 @@
+%\RequirePackage{lineno}
+\documentclass[aps,prc,preprint,superscriptaddress,showpacs,showkeys]{revtex4-1}
+\usepackage{graphicx}
+
+\begin{document}
+%\linenumbers
+\title{{\Large Quarkonia suppressions in PbPb collisions at $\sqrt s_{NN}$ =  2.76 TeV }}
+\author{\large Vineet Kumar}
+\author{\large Prashant Shukla}
+\email{pshukla@barc.gov.in}
+\affiliation{Nuclear Physics Division, Bhabha Atomic Research Center, Mumbai, India}
+\affiliation{Homi Bhabha National Institute, Anushakti Nagar, Mumbai, India}
+\date{\today}
+
+
+\begin{abstract}
+We calculate quarkonia yield modification in PbPb collisions at LHC energy.
+The quarkonia suppression is estimated using well known 
+process of gluon dissociation in medium. The rate of regeneration has been obtained 
+using principle of detailed balance and is compared with that obtained using statistical hadronization 
+model. Modification in yield due to comovers has been estimated using pion bombardment on quarkonia.  
+  The nuclear modification factor as a function of centrality and transverse momentum has been calculated  
+and compared to J/$\psi$ and $\Upsilon$ nuclear modification factors measured in PbPb collisions 
+at $\sqrt s_{NN}$ =  2.76 TeV. The gluon dissociation process is not sufficient to produce observed suppression
+in high transverse momentum region.
+\end{abstract}
+
+\pacs{12.38.Mh, 24.85.+p, 25.75.-q}
+\keywords{quark-gluon plasma, quarkonia, suppression, regeneration}
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+Quantum chromodynamics (QCD) predicts that strongly interacting matter undergoes a phase transition to a deconfined state, 
+often referred to as the quark-gluon plasma(QGP), in which quarks and gluons are no longer bound within hadrons. Aim of Heavy 
+Ion Collisions at high energies is to create, characterize and quantify the properties of Quark Gluon Plasma (QGP).  
+ The experimental effort to produce such matter started with low energy CERN accelerator 
+SPS and evolved through voluminous results from heavy ion collision at Relativistic Heavy Ion 
+Collider (RHIC) \cite{INTRO}. The recent results from Large Hadron Collider (LHC) experiments \cite{QGP_Tc} are 
+pointing towards formation of high temperature system in many ways similar to the matter
+produced at RHIC. One of the most important signal of QGP is the suppression of 
+quarkonium states \cite{SATZ}, both of the charmonium ($J/\psi$, $\psi(2S)$ etc) 
+and the bottomonium ($\Upsilon(1S)$ , $\Upsilon(2S)$ etc) families. This is thought 
+to be a direct effect of deconfinement, and quarkonia yield is expected to be suppressed
+in high energy heavy ion collisions. 
+%when the binding potential between the constituents of a quarkonium state, 
+%a heavy quark and its antiquark, is screened by the colour charges of the surrounding light quarks and gluons.
+ The ALICE and CMS experiments have carried out detailed quarkonia measurements in Pb+Pb collisions 
+with the higher energy and luminosity available at the LHC. The ALICE measurements \cite{ALICEJPsi} shows that suppression of 
+low transverse momentum ($p_T$) prompt $J/\psi$ have very little or no centrality dependence. CMS measured a steady and smooth decrease of 
+suppression for high $p_T$ prompt $J/\psi$ as a function of centrality with nuclear modification factor $R_{AA}$ remaining $<$ 1 even 
+in the peripheral bin \cite{JCMS,CMSJPsi}. When compared with PHENIX measurement of forward rapidity at RHIC \cite{PHENIXJPsi}, ALICE shows 
+that low p$_T$ J/$\psi$ are less suppressed at LHC indicating substantial recombination effects at LHC energies.
+The melting temperature of the quarkonia states depend on their binding energy. 
+%The ground states, $J/\psi$ and $\Upsilon(1S)$ are expected to dissolve at significantly higher temperatures than the more 
+%loosely bound excited states. 
+With the 2011 Pb+Pb run the CMS published results on sequential suppression of 
+$\Upsilon(nS)$ states as a function of centrality \cite{CMSUpsilon} with enlarged statistics
+over their first measurement \cite{UCMS}, where a suppression of the excited $\Upsilon$ states with respect 
+to the ground state have been observed in PbPb collisions compared to pp collisions at $\sqrt s_{NN} = 2.76$ TeV \cite{YSuppAbdShuk}.
+There have been extensive theoretical studies to understand the observed results \cite{SATZ,Xu,Thews,Andronic_SH1,Andronic_SH2,YSuppAbdShuk}. 
+Some of these studies are based on the effect of color screening \cite{SATZ,YSuppAbdShuk} or the assumption of statistical production of 
+J/$\psi$ during hadronization of the QGP \cite{Andronic_SH1,Andronic_SH2}. Other studies includes the effect of 
+J/$\psi$ dissociation by gluons and the inverse process for its production in the QGP \cite{Grandchamp,Thews}.  
+The quarkonia yields in heavy ion collisions are also modified due to non-QGP effects such as
+shadowing, an effect due to change of the parton distribution functions inside the nucleus,
+and dissociation due to hadronic or comover interaction \cite{Vogt}.
+ If large number of heavy quarks are produced in initial heavy ion collisions at LHC energy 
+this could even lead to enhancement of quarkonia via recombination \cite{Andronic_SH1, Andronic_SH2, Rapp1, Rapp2}. 
+ In this paper, we calculate the charmonia suppression due to thermal gluon dissociation in an expanding
+Quark Gluon Plasma. Other sources which can alter the yield of charmonium are considered 
+e.g. nuclear shadowing and comover interaction. We also consider the effect of J/$\psi$ regeneration using the principle of
+detailed balance. J/$\psi$ yield is studied as a function of transverse momentum of J/$\psi$ and impact parameter of event i.e 
+centrality of collision. Calculations are compared with experimental data from CMS and ALICE.
+
+\section{Heavy quark production rates}
+The production cross sections for heavy quark pairs are calculated to NLO in pQCD  
+using the CTEQ6M parton densities \cite{CTEQ6}.  The central EPS09 parameter set 
+\cite{EPS09} is used to calculate the modifications of the parton densities in 
+Pb+Pb collisions.  We use the same set of parameters
+as that of Ref.~\cite{CNV} with the NLO calculation of Ref.~\cite{MNR}
+to obtain the exclusive $Q \overline Q$ pair rates as well as their decays
+to dileptons.  
+ The production cross sections for heavy flavor and quarkonia at $\sqrt{s_{_{NN}}}= 2.76$ 
+TeV \cite{ContinuumVKShuk} are given in Table~\ref{NLOcros}.  The number of $Q \overline Q$ pairs
+in a minimum bias Pb+Pb event is obtained from the per nucleon cross
+section, $\sigma_{\rm PbPb}$, by
+\begin{eqnarray}
+N_{Q \overline Q} = {A^2 \sigma_{\rm PbPb}^{Q \overline Q}  \over  
+\sigma_{\rm PbPb}^{\rm tot}} \, \, .
+\end{eqnarray}
+ At 2.76 TeV, the total Pb+Pb cross section, $\sigma_{\rm PbPb}^{\rm tot}$, 
+is 7.65 b \cite{PbPbTotal}.
+
+\begin{table}
+\caption[]{Heavy quark and quarkonia cross sections at
+$\sqrt{s_{_{NN}}}= 2.76$ TeV. The cross sections are given per nucleon pair while
+$N$ gives number of heavy quark pair/quarkonia per Pb+Pb event.}
+\label{NLOcros}
+\begin{tabular}{l|l|l|l|l} 
+\hline 
+\hline
+                     & $ c \overline c$           &J/$\psi$      & $ b \overline b$           & $\Upsilon$   \\              
+\hline
+$\sigma_{\rm PbPb}$  & $1.76^{+2.32}_{-1.29}$ mb  & $31.4 \mu$b  & $89.3^{+42.7}_{-27.2} \mu$b  & $0.38 \mu$b  \\
+$N$                  &$9.95^{+13.10}_{-7.30}$     & $0.177$      & $0.50^{+0.25}_{-0.15}$     & $0.01$       \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}
+\caption[]{Quarkonia properties as predicted by non-relativistic potential model using 
+``Cornell'' potential\cite{YSuppAbdShuk}.}
+\label{QuarkoniaProperties}
+\begin{tabular}{l|l|l|l|l|l|l|l|l} 
+\hline   
+\hline
+    &J/$\psi$  &$\chi_c$  &$\psi(2S)$ &$\Upsilon(1S)$ &$\chi_b(1P)$ &$\Upsilon(2S)$ &$\chi_b(2P)$ &$\Upsilon(3S)$ \\ 
+\hline 
+Mass [GeV/$c^2$]                      &3.10     &3.53  &3.68  &9.46  &9.99  &10.02  &10.26   &10.36 \\
+Binding Energy [GeV]                  &0.64     &0.20  &0.05  &1.10  &0.67  &0.54   &0.31    &0.20 \\
+%Radius [fm]                           &0.25     &0.36  &0.45  &0.14  &0.22  &0.28   &0.34    &0.39 \\
+%Formation time $\tau_{\rm Form}$ [fm]    &0.89     &2.0   &1.5   &0.76  &2.6   &1.9    &2.6      &2.4 \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Modification of quarkonia in presence of QGP}
+In Kinetic approach \cite{Thews} the proper time ($\tau$) evolution of the $J/\psi$ population is given by the rate equation 
+
+\begin{equation}\label{eqkin}
+{dN_{J/\psi} \over d\tau}  =  - \lambda_D  \rho_g N_{J/\psi} + \lambda_F {N_{c \bar{c}}^{2} \over V(\tau)}
+\end{equation}
+where $\rho_g$ is the number density of gluons. $V(\tau)$ is the volume of the deconfined spatial region
+and $N_{c \bar{c}}^{2}$ is the number of charm quarks produced per event.
+The reactivities $\lambda_{F,D}$ are
+the reaction rates $\langle \sigma v_{\mathrm{rel}} \rangle$
+averaged over the momentum distribution of the initial
+participants, i.e. $c$ and $\bar c$ for $\lambda_F$ and
+$J/\psi$ and gluon for $\lambda_D$.
+The gluon density $\rho_g$ is determined by the equilibrium value in the QGP at each temperature. 
+ The solution of Eq.~(\ref{eqkin}) is given by
+\begin{equation}
+N(\tau_f,p_T) = S(\tau_f,p_T) \,N_{J/\psi}^{0}(p_T)+N_{J/\psi}^{\rm regen}(p_T)
+\label{eqbeta}
+\end{equation}
+where $\tau_f$ is the freeze out time determined by the initial temperature ($T_0$) and
+freeze out temperature ($T_f$ ).
+The survival probability $S(\tau_f,p_T)$ of quarkonia from gluon dissociation is given as 
+\begin{equation}
+S(\tau_f,p_T) = \exp \left( {-\int_{\tau_0}^{\tau_f}f(\tau) \lambda_{\rm D}(T,p_T)\,\rho_g(T)\,d\tau} \right), 
+\end{equation}
+and $N_{J/\psi}^{\rm regen}(p_T)$ represent the regenerated J/$\psi$ given by
+\begin{equation}
+N_{J/\psi}^{\rm regen}(p_T)=S(\tau_f,p_T)N_{c \bar{c}}^{2} \int_{\tau_0}^{\tau_f}{{\lambda_{\mathrm{F}} \over V(\tau)\,S(\tau,p_T)} d\tau}
+\end{equation}
+The nuclear modification factor ($R_{AA}$) can be written as 
+\begin{equation}
+R_{AA}(p_T)=S(\tau_f,p_T) + \frac{N_{J/\psi}^{\rm regen}(p_T)}{N_{J/\psi}^{0}(p_T)}
+\label{raa}
+\end{equation}
+$R_{AA}$ as a function of collision centrality, including the regeneration will be  
+\begin{equation}
+R_{AA}(N_{\rm part}) = \frac{\int_{p_{Tmin}}^{p_{Tmax}} N_{J/\psi}^{0}(p_T)S(p_T)dp_T}{\int_{p_{Tmin}}^{p_{Tmax}} N_{J/\psi}^{0}(p_T) dp_T} + 
+\frac{\int_{p_{Tmin}}^{p_{Tmax}} N_{J/\psi}^{\rm regen}(p_T) dp_T}{\int_{p_{Tmin}}^{p_{Tmax}}N_{J/\psi}^{0}(p_T) dp_T}
+\label{raa2}
+\end{equation}
+Here $p_{Tmin}$ and $p_{Tmax}$ are experimental cuts applied to match the CMS and ALICE acceptances while $N_{J/\psi}^{0}(p_T)$
+is obtained from unmodified $p_T$ distribution of J/$\psi$ taken from Pythia \cite{Pythia1,Pythia2}. 
+
+\begin{figure}
+\includegraphics[width=0.49\textwidth]{Fig1a_TauVsTemp.eps}
+\includegraphics[width=0.49\textwidth]{Fig1b_TauVsFQGP.eps}
+\caption{(Color online) Temperature of the system and QGP fraction as a function of proper time in case of 
+most central (0-5$\%$) collisions for longitudinal and cylindrical expansions.}
+\label{fig:TauVsTemp}
+\end{figure}
+ The temperature evolution for different centralities of collision is obtained by 
+assuming an isentropical cylindrical expansion with volume element
+\begin{equation}
+V(\tau) = \tau\,\pi\,(R_0 + {1\over 2} a \, \tau^2 )^{2}\Delta y,
+\end{equation}
+ where a$_T$=0.1c$^2$ fm$^{-1}$ is the transverse acceleration \cite{RAPc}.
+The initial transverse radius, $R_0$ as a function of centrality is 
+obtained in terms of the radius of the Pb nucleus ($R_{\rm Pb}$) as
+\begin{equation}
+R_0(N_{\rm part}) = R_{\rm Pb} \, \sqrt{N_{\rm part} \over N_{\rm part0} }.
+\label{RVsNPart}
+\end{equation}
+where $N_{\rm part0} = 2A$ is the total number of participants in head on collisions.
+
+The temperature variation with time is obtained by  
+\begin{eqnarray}
+s(\tau)\,V(\tau)= s(\tau_0)\,V(\tau_0)=S. 
+\end{eqnarray}
+Using $s(\tau)=4a_qT^3$ for entropy density in QGP 
+\begin{eqnarray}
+T(\tau)^{3} = \frac{S}{4a_qV(\tau)}.
+\end{eqnarray}
+where $a_{q} = (7N_f/60 + 16/90)\pi^2$ is the degrees of freedom in quark gluon phase.
+We relate initial temperature with measured charged particle multiplicity as
+\begin{eqnarray}
+S = 4a_qV(\tau_0)|_{0-5\%} T_{0}^{3} =3.6\left(\frac{dN}{d\eta}\right)_{0-5\%}. 
+\label{TempVsMult}
+\end{eqnarray}  
+Using $(dN/d\eta)_{0-5\%}$=1.5$\times$1600 obtained from the charge particle multiplicity measured in 
+Pb+Pb collisions at 2.76 TeV \cite{MULT} and N$_f$ = 2.5, we calculate initial temperature
+0.643 GeV at time $\tau_0$ = 0.1 fm/c.
+Transverse size of the system for 0-5$\%$ centrality is $R_{0-5\%}$ = 0.92$R_{\rm Pb}$,
+ obtained from Eq.~(\ref{RVsNPart}). 
+The initial temperature for different centralities is calculated by 
+\begin{equation}
+T_{0}^{3}({N_{\rm part}})=T_{0}^{3}\left(\frac{dN/d\eta}{N_{\rm part}/2}\right)/\left(\frac{dN/d\eta}{N_{\rm part}/2}\right)_{0-5\%}
+\label{TempNpart}
+\end{equation}
+Figure \ref{fig:TauVsTemp} shows variation of temperature and QGP fraction as a function of proper time $\tau$ 
+for both longitudinal and cylindrical expansions. Temperature decrease rapidily for cylindrical expansion than
+longitudinal expansion. It becomes constant in mixed phase, while QGP fraction start decreasing. Temperature
+again decrease in hadronic phase before kinetic freeze out when QGP fraction is zero.    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+\includegraphics[width=0.60\textwidth]{Fig2_SigmaDq0.eps}
+\caption{Gluon dissociation cross-section of quarkonia as a function of gluon energy ($q^{0}$) in
+quarkonia rest frame.}
+\label{fig:SigmaDQ0}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=0.49\textwidth]{Fig3a_DRateVsT.eps}
+\includegraphics[width=0.49\textwidth]{Fig3b_DRateVsPt.eps}
+\caption{(Color online) Gluon dissociation rate of J/$\psi$ as a function of a) temperature and with b) transverse momentum.}
+\label{fig:DRateVsTempAndPt}
+\end{figure}
+
+\section{Dissociation Rate}
+The gluon dissociation cross section of J$/\psi$ in dipole approximation is given by \cite{ks95}
+\begin{equation}
+\sigma_{D}(q^{0}) = 4\pi\,\left(\frac{8}{3}\right)^3\,\frac{1}{m_Q^{3/2}}\,\epsilon_0^3 \frac{ (q^0-\epsilon_0)^{3/2}}{(q^0)^5}
+\end{equation}
+where $m_Q$ is the heavy quark mass, and $q^0$ is gluon energy in the J$/\psi$ rest
+frame; its value must be larger than the J$/\psi$ binding energy $\epsilon_0$.
+Figure \ref{fig:SigmaDQ0} shows the gluon dissociation cross section ($\sigma_{D}(q^{0})$) of J/$\psi$ and $\Upsilon(1S)$
+as a function of gluon energy. The dissociation cross section is zero when gluon energy is less than the binding energy
+of the quarkonia. It increases with gluon energy and reach to a maximum for gluon energy 1.2 (1.5) GeV for 
+J/$\psi\,(\Upsilon)$. It decreases again for higher energy gluons as interaction probability decrease.     
+$q^0$ is related to centre of mass energy $s$, of $J/\psi$-gluon system as
+\begin{eqnarray}
+ q^{0} = \frac{s-M_{J/\psi}^{2}}{2\,M_{J/\psi}},
+\end{eqnarray}  
+using this relation $\sigma_{D}(s)$ can be obtained. 
+The centre of mass energy square $s$, of $J/\psi$-gluon system can be written as
+\begin{eqnarray}
+s&=&m_{J/\psi}^{2} + 2E_{J/\psi}E_{g}(1-{\rm cos\theta})
+\end{eqnarray} 
+here $E_g\,(E_{J/\psi})$ is energy of gluon(J/$\psi$) and $\theta$ is angle between them.
+We can calculate dissociation rate by folding the dissociation cross-section on thermal gluon distribution as   
+\begin{eqnarray}
+\lambda_{D} = \langle \sigma v_{\rm rel} \rangle_{p_{g}} & = 
+& \frac{ \frac{\lambda_g}{(2\pi)^{3}} \int d^{3}p_{g} f_{g}(p_{g},T) v_{\rm rel} \sigma_{D}(s)}{\rho_{g}} \\ \nonumber
+\end{eqnarray}
+The thermal gluon density $\rho_g$ is given as 
+\begin{eqnarray}
+\rho_g =\frac{\lambda_g)}{(2\pi)^{3}} \int d^3p_{g} f_{g}(p_{g},T) 
+\end{eqnarray}
+The J/$\psi$-gluon dissociation rate can be written as  
+\begin{eqnarray}
+\lambda_{D}\rho_{g} & = &\frac{1}{(2\pi)^{3}} \int  2\pi p_{g}^{2} dp_{g} f_{g}(p_{g},T) \int \sigma_{D}(s) v_{\rm rel}(s) \Theta(s-\epsilon_{0}^{2}) d({\rm cos\theta}) \\\nonumber
+\end{eqnarray}
+where the thermal gluon distribution is given by
+\begin{equation}
+f_{g}(p_{g},T)=\frac{\lambda_g(=16)}{e^{\sqrt{p_{g}^{2} + m_{g}^{2}}/T}-1} 
+\end{equation}
+The relative velocity $v_{\rm rel}$ between the $J/\psi$ and gluon can be written as
+\begin{eqnarray}
+ v_{\rm rel}  = {s- M_{J/\psi}^{2} \over 2E_{J/\psi}E_{g}}  
+\label{eq7}
+\end{eqnarray}
+Figure \ref{fig:DRateVsTempAndPt} shows variation of gluon dissociation rate for J/$\psi$ as a funcion of medium temperature
+and J/$\psi$ transverse momentum. Dissociation increases with temperature as gluon density increases with temperature. 
+Dissociation is maximum if we consider J/$\psi$ at rest and decreases with transverse momentum of J/$\psi$.
+%
+%and $q^0$ the gluon energy in the $J/ \psi$ rest frame is related to centre of mass 
+%energy of $J/\psi$-gluon system as
+%\begin{eqnarray}
+% q^{0} = \frac{s-M_{J/\psi}^{2}}{2\,M_{J/\psi}},
+%\end{eqnarray}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%`If we consider that the $J/ \psi$ moves in the transverse direction with a four-velocity
+%$u=(M_T, \vec{P_T}, 0)/M_{J/\psi}$, where $M_T=\sqrt{p_T^2+M^2_{J/ \psi}}$ is defined as the $J/\psi$'s
+%transverse mass. 
+%A gluon with a four-momentum $k=(k^0,\vec{k})$
+%in the rest frame of the parton gas has an energy $q^0=k\cdot u$
+%in the rest frame of the $J/\psi$ given by
+%\begin{eqnarray}
+% q^{0} &= &\frac{k^{0}\,m_{T} + \vec{k} \cdot \vec{p_{T}}}{M_{J/\psi}}, \nonumber \\
+%       &= &\frac{s-M_{J/\psi}^{2}}{2\,M_{J/\psi}},
+%\end{eqnarray}
+%The dissociation rate is given by 
+%\begin{eqnarray}
+%\lambda_D = \langle v_{\rm rel} \sigma_{D} (k \cdot u)\rangle_k &= &\frac{\int d^3k v_{\rm rel} \sigma_{D} (k \cdot u) f(k^0,T)}{\int d^3k f(k^0,T)},
+% \label{eq5}
+%\end{eqnarray}
+%where the gluon distribution in the rest frame of the parton gas is
+%\begin{equation}
+%  f(k^0,T)=\frac{\lambda_g(=16)}{e^{k^0/T}-1} \label{eq6}.
+%\end{equation}
+%The relative velocity $v_{\rm rel}$ between the $J/\psi$ and a gluon is
+%\begin{eqnarray}
+% v_{\rm rel}  =  \frac{P_{J/\psi}\cdot k}{k^0M_T} \,\,
+%              =  1-\frac{\vec{k}\cdot\vec{P}_T}{k^0M_T} \,\,
+%              =  {s- M_{J/\psi} \over 2E_1E_2}  
+%\label{eq7}
+%\end{eqnarray}
+%Changing the variable to the gluon momentum, $q=(q^0,\vec{q})$, in
+%the rest frame of the $J/\psi$, and writing $\rho_g = \int d^3k f(k^0,T)$, 
+%the Eq.~(\ref{eq5}) can be rewritten as
+%\begin{eqnarray}
+%\lambda_D \rho_g  =  \int d^3q \frac{M_{J/\psi}}{m_T}\sigma_{D}(q^0) f(k^0,T).
+%\label{eq8}
+%\end{eqnarray}
+%Using $ k^0=(q^0M_T+\vec{q}\cdot\vec{P}_T)/M_{J/\psi}$ in Eq.~\ref{eq8} and solving
+%\begin{eqnarray} 
+%\lambda_D\,\rho_g &= &\frac{M_{J/\psi}}{m_T} \int d^3q \, \sigma_{D}(q^0) \frac{\lambda_{g}} {  e^{ \frac{q^0m_{T}}{M_{J/\psi}T}} e^{ \frac{ \vec{q}\cdot \vec{p_{T} } }{ M_{J/\psi}T }  } -1}  \nonumber \\
+%%&= &\frac{\lambda_{g}}{2\pi^3} \frac{M_{J/\psi}}{m_T} \int d^3q \, \sigma_{D}(q^0)   \sum_{n=1}^{\infty}  e^{ \frac{-n\,q^0 m_{T}}{M_{J/\psi}T}} e^{  \frac{-n\,\vec{q}\cdot \vec{p_{T}}}{M_{J/\psi}T}}  \nonumber \\
+%%&= &\frac{\lambda_{g}}{2\pi^3} \frac{M_{J/\psi}}{m_T}  \sum_{n=1}^{\infty} 2\pi  \int (q^0)^2 dq^0 \, \sigma_{D}(q^0)\,e^{ \frac{-n\,q^0m_{T}}{M_{J/\psi}T}}  \int_{1}^{-1} e^{  \frac{-n\,q^0\,p_{T} cos\theta}{M_{J/\psi}T}} d(cos\theta) \nonumber \\
+%%&= &\frac{\lambda_{g}}{2\pi^3} \frac{M_{J/\psi}}{m_T} \sum_{n=1}^{\infty} 2\pi  \int (q^0)^2 dq^0 \, \sigma_{D}(q^0)\,e^{ \frac{-n\,q^0 m_{T}}{M_{J/\psi}T}} 
+%%    \left[ e^{-\frac{nq^0 p_T}{M_{J/\psi}T}} - e^{\frac{nq^0 p_T}{M_{J/\psi}T}} \right]\,\frac{M_{J/\psi}T}{nq^0 p_T}  \nonumber \\
+%&= &\frac{\lambda_{g}}{2\pi^3} \frac{M_{J/\psi}^2}{m_T} 2\pi \sum_{n=1}^{\infty} \frac{T}{n} \int_{\epsilon_0}^{\infty} q^0 dq^0 \, \sigma_{D}(q^0)  
+%     \,e^{ \frac{-n\,q^0 m_{T}}{M_{J/\psi}T}} 
+%     \frac{1}{p_T} \left[e^{\frac{n q^0 p_T}{M_{J/\psi}T}} - e^{- \frac{n q^0 p_T}{M_{J/\psi}T}}\right] \\ \nonumber
+%\label{dissrate}
+%\end{eqnarray}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The special case of Eq.~(\ref{dissrate}) for J/$\psi \,p_T = 0$ is
+%\begin{eqnarray} 
+%  \frac{1}{p_T} \left[e^{\frac{n q^0 p_T}{M_{J/\psi}T}} - e^{- \frac{n q^0 p_T}{M_{J/\psi}T}}\right] = {2nq^0\over M_{J/\psi}T}.
+%\label{case}
+%\end{eqnarray}
+%Using this we get 
+%\begin{eqnarray} 
+% \lambda_D\,\rho_g &= &  4\pi \int (q^0)^2\,dq^0 \, \sigma_{D}(q^0) \frac{\lambda_{g}} {e^{\frac{q^0}{T}} -1}
+%\end{eqnarray}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Formation Rate}
+We can calculate formation rate from dissociation rate using detailed balance relation \cite{Thews,THEWF}
+as
+%The dissociation cross-section will be related to formation cross section as
+\begin{equation}
+\sigma_{F} = \frac{48}{30}\,\sigma_{D}(q^0)\frac{(s-M_{J/\psi})^{2}}{s(s-4m_{c}^{2})}.
+\end{equation}
+The formation rate can be written as 
+\begin{equation}
+\lambda_{F} = \langle \sigma_{F} \,\, v_{\rm rel} \rangle
+\end{equation}
+$v_{\rm rel}$ is relative velocity between c $\bar{c}$ quark pair and is given by
+\begin{eqnarray}
+v_{\rm rel} &=& {\sqrt{(p_{1}.p_{2})^{2} - m_Q^{4} } \over E_{1} \, E_{2}} \nonumber \\
+            &=& \frac{\sqrt{s(s-4m_{Q}^{2})}}{2E_1E_2}.
+\end{eqnarray}
+Here $p_1 = (E_1,\vec{p_{1}})$, $p_{2} = (E_{2},\vec{p_{2}})$ are four vectors of charm and anti-charm 
+quarks respectively. 
+The centre of mass energy square of c$\bar{c}$ system can be written as
+\begin{eqnarray}
+ s &= & m_Q^{2} + m_Q^{2} + 2 E_1E_2 - 2 |\vec{p_1}||\vec{p_2}|cos\theta 
+\end{eqnarray}
+%where $\vec{p_{1}}$ and $\vec{p_{2}}$ are three momentum of quarks. 
+The final expression for formation rate can be written as
+%\begin{eqnarray}
+%\lambda_{F} &=&\frac{\int \sigma_{F}(s)\, v_{\rm rel}\,f_{c}(p_1)\, f_{\bar{c}} (p_2) \,d^{3}p_1 \,d^{3}p_2 \, \delta^{3}(\vec{p_{j/\psi}}-(\vec{p_1}-\vec{p_2}))} 
+%       {\int \,f_{c}(p_1)\,d^{3}p_1 \,\, \int f_{\bar{c}} (p_2)\,d^{3}p_2}\\
+%       %&= &\frac{\int \sigma_{F}(s)\, v_{\rm rel}\,f_{c}(p_1)\, f_{\bar{c}} (p_2) \, 4\pi p_1^{2} dp_1 \, 2\pi p_2^{2} dp_2 d(cos \theta)\, \delta^{3}(\vec{p_{j/\psi}}-(\vec{p_1}-\vec{p_2}))}
+%       %{4\pi \int p_1^{2} dp_1 \,f_{c}(p_1) \,\, 4 \pi \int p_2^{2} dp_2 \, f_{\bar{c}} (p_2)}.
+%\end{eqnarray}
+\begin{equation}
+\lambda_{F} = \langle \sigma_{F} \,\, v_{\rm rel} \rangle = \frac{\int \sigma_{F}(s)\, v_{\rm rel}\,f_{c}(p_1)\, f_{\bar{c}} (p_2) \,d^{3}p_1 \,d^{3}p_2 \, \delta^{3}(\vec{p}-(\vec{p_1}+\vec{p_2}))} 
+       {\int \,f_{c}(p_1)\,d^{3}p_1 \,\, \int f_{\bar{c}} (p_2)\,d^{3}p_2}\\
+\end{equation}
+$f_{c}(p)$ and $f_{\bar{c}}(p)$ are taken as thermal distribution function of c and $\bar{c}$ respectively which are given by
+\begin{equation}
+f_{c}(p)={g_c(=6)  \over 1 + {\rm exp} [ { (p^{2} + m_{Q}^{2} )^{1/2}  \over T }] }.
+\end{equation}
+\begin{figure}
+\includegraphics[width=0.49\textwidth]{Fig4a_FRateVsT.eps}
+\includegraphics[width=0.49\textwidth]{Fig4b_FRateVsPt.eps}
+\caption{(Color online) Formation rate as a function of (a) temperature and (b) transverse momentum.}
+\label{fig:ForRateVsTempAndPt}
+\end{figure}
+Figure \ref{fig:ForRateVsTempAndPt} shows variation of formation rate as a funcion of medium temperature
+and transverse momentum. The J/$\psi$ generated from recombination of uncorrelated heavy quark pairs will have 
+softer $p_{T}$ distributions than that of J/$\psi$ coming from initial hard scattering and thus 
+effect of recombination will be important only at low $p_T$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Formation of quarkonia  by statistical hadronization model}\label{SHM}
+The heavy quark production at LHC is substantial which may lead to incoherent 
+recombination of uncorrelated pairs of heavy quarks and anti quarks which result 
+from multiple pair production. In statistical approach \cite{MUNZI} the number of 
+J/$\psi$ regenrated is given by 
+\begin{eqnarray}
+N_{J/\psi}  &= &4 {n_{ch} n_{J/\psi} \over n_{\rm open}^2}  {N_{c\bar c}^2 \over N_{ch} }\\
+          &= &\frac{N_{c\overline{c}}^{2}}{V}\frac{4n_{J/\psi}}{n_{open}^{2}}.
+\end{eqnarray}
+where $n_i$'s are the thermal densities, $N_{c\bar c}$ is the number of charm pairs produced 
+and $N_{ch}$ is the number of total charged particle produced. 
+The freeze out parameters are $T=170$ MeV and $\mu_B = 0$. For
+$dN_{ch}/dy = 1600$ \cite{MULT} and $dN_{c \bar c} /dy = 14.0$, we obtain $dN_{J/\psi} /dy = 0.0092$.
+The densities can be calculated using thermal distributions of various particles.
+
+\begin{equation}
+n_{open} = {4\pi \,g_{D} \over (2\pi)^{3}} \int_{0}^{\infty} f_{D}(p)p^{2}dp
+\end{equation}
+by the same method we can calculate the J/$\psi$ number density as
+
+\begin{equation}
+n_{J/\psi} = {4\pi \,g_{J/\psi} \over (2\pi)^{3}} \int_{0}^{\infty} f_{J/\psi}(p)p^{2}dp 
+\end{equation}
+ For total charge particle density we can use 
+
+\begin{equation}
+n_{ch} = 2 \,n_{\pi} + 2\, n_{K} + 2\, n_{p},
+\end{equation}
+where
+\begin{equation}
+n_{\pi} = {4\pi \,g_{\pi} \over (2\pi)^{3}} \int_{0}^{\infty} f_{\pi}(p)p^{2}dp.
+\end{equation}
+
+ 
+
+\begin{figure}
+\includegraphics[width=0.49\textwidth]{ALICE_RAA.eps}
+\includegraphics[width=0.49\textwidth]{CMS_RAA_JPsi.eps}
+%\caption{(Color online) Calculated nuclear modification factor (R$_{AA}$) compared with ALICE and CMS measurements at LHC. No regeneration is 
+%considered for high p$_{T}$ CMS data. We assume similar cold nuclear matter effects for both ALICE and CMS rapidity ranges.}
+\caption{(Color online) Calculated nuclear modification factor (R$_{AA}$) compared with ALICE and CMS measurements at LHC. No regeneration is 
+considered for high p$_{T}$ CMS data. We assume similar cold nuclear matter effects for both ALICE and CMS rapidity ranges.}
+\label{fig:JPsiRaa}
+\end{figure}
+
+
+%\begin{figure}
+%\includegraphics[width=0.60\textwidth]{Fig5_ALICEMid_RAA.eps}
+%\caption{(Color online) Nuclear modification factor (R$_{AA}$) compared with ALICE measurement at mid
+%rapidity. Similar regeneration is assumed at forward and mid-rapidity.}
+%\label{fig:JPsiRaaALICEMid}
+%\end{figure}
+
+
+\begin{figure}
+\includegraphics[width=0.49\textwidth]{ALICE_RAAPt.eps}
+\includegraphics[width=0.49\textwidth]{CMS_RAAPt.eps}
+\caption{(Color online) Calculated nuclear modification factor (R$_{AA}$) as a function of J/$\psi$ transverse momentum. Calculations are
+compared with ALICE and CMS measurements.}
+\label{fig:JPsiRaaVsPt}
+\end{figure}
+
+
+
+
+\begin{figure}
+\includegraphics[width=0.49\textwidth]{CMS_RAA_Upsilon1S.eps}
+\includegraphics[width=0.49\textwidth]{CMS_RAA_Upsilon2S.eps}
+%\caption{(Color online) Calculated nuclear modification factor (R$_{AA}$) compared with CMS $\Upsilon$(1S) and $\Upsilon$(2S) measurements.
+%We assume small cold nuclear matter suppression than J$\psi$ and no regeneration due to small production cross section of beauty quark as shown in Table~\ref{NLOcros}.}
+\caption{(Color online) Calculated nuclear modification factor (R$_{AA}$) compared with CMS $\Upsilon$(1S) and $\Upsilon$(2S) measurements.
+We assume small cold nuclear matter suppression than J$\psi$ and no regeneration due to small production cross section of beauty quark as shown in Table~\ref{NLOcros}.}
+\label{fig:UpsilonRaa}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cold matter effects}
+The quarkonia can be suppressed due to cold matter effects such as shadowing and due to hadronic
+and comover interaction. For simplicity we approximate the combination of all CNM effects 
+by a suppression factor \cite{Rapp1,Rapp2},
+\begin{equation}
+  S_{Nucl}=\exp[-\rho_{N}\sigma_{abs}L(b)]
+  \label{CNMF}
+\end{equation}
+with an effective nuclear absorption cross section, $\sigma_{abs}$.
+We take absorption cross section, $\sigma_{abs}$ = 1.5 mb (1.5 mb) for
+J/$\psi$($\Upsilon$). The other parameters in Eq. \ref{CNMF} are the nuclear density,
+$\rho_N$=0.14 fm$^{-3}$, and the impact-parameter dependent path length, L(b), evaluated 
+with a Glauber model \cite{GM_PShukla} for the nuclear overlap.
+The suppression of quarkonia by comoving pions can be calculated by folding the J/$\psi$-pion
+dissociation cross section over thermal pion distributions \cite{vogt2}. If we assume a constant dissociation 
+cross section $\sigma_{I}$, the dissociation rate can be written as
+\begin{eqnarray}
+\lambda_{D_{\pi}} = \langle \sigma v_{\rm rel} \rangle_{p_{\pi}} & = 
+& \frac{ \frac{1}{(2\pi)^{3}} \int d^{3}p_{\pi} f_{\pi}(p_{\pi},T) v_{\rm rel} \sigma_{I}}{\frac{1}{(2\pi)^{3}} \int d^{3}p_{\pi} f_{\pi}(p_{\pi},T)} \\ \nonumber
+\end{eqnarray}
+We assume a constant cross section for 
+if thermal pion density is given by $\rho_{\pi}$ as 
+\begin{eqnarray}
+\rho_\pi =\frac{1}{(2\pi)^{3}} \int d^3p_{\pi} f_{\pi}(p_{\pi},T) 
+\end{eqnarray}
+
+then J/$\psi$-$\pi$ dissociation rate can be written as  
+\begin{eqnarray}
+\lambda_{D_{\pi}}\rho_{\pi} & = & \frac{1}{(2\pi)^{3}} \int d^{3}p_{\pi} f_{\pi}(p_{\pi},T) v_{\rm rel} \sigma_{I}\\ \nonumber
+                   & = &\frac{1}{(2\pi)^{3}} \int  2\pi p_{\pi}^{2} dp_{\pi} f_{\pi}(p_{\pi},T) \int \sigma_{I} v_{\rm rel}(s) \Theta(s-4m_{D}^{2}) d(cos\theta) \\\nonumber
+\end{eqnarray}
+where the thermal pion distribution is given by
+\begin{equation}
+f_{\pi}(p_{\pi},T)=\frac{\lambda_{\pi}(=3)}{e^{\sqrt{p_{\pi}^{2} + m_{\pi}^{2}}/T}+1} 
+\end{equation}
+
+\section{Results and discussion}
+To be written properly$...............$\\
+We consider the contributions of recombined J/$\psi$
+only for low $p_{T}$ measurements made by ALICE detector as shown in Fig. \ref{fig:JPsiRaa} (a).     
+ We do not consider effect of recombination for high $p_{T}$ measurement made by CMS detector \cite{CMSUpsilon,CMSJPsi} 
+as shown in Fig. \ref{fig:JPsiRaa} (b). As production cross section of bottom quark is small even at LHC energies,
+we do not consider effect of recombination for $\Upsilon$ measurement shown in Fig. \ref{fig:UpsilonRaa}(c).
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary}
+ The $J/\psi$ and $\Upsilon$ modification in medium are calculated and compared to the data
+measured by CMS and ALICE.
+  The $J/\psi$ suppression is estimated using process of gluon dissociation in medium. The rate of regeneration 
+has been obtained using principle of detailed balance and is compared with that obtained using statistical 
+hadronization model. 
+%The suppression factors due to cold nuclear matter effects 
+%have been obtained from measurements of quarkonia in pPb collisions.
+The nuclear modification factor as a function of centrality and transverse momentum has been calculated  
+and compared to J/$\psi$ and $\Upsilon$ nuclear modification factors measured in PbPb collisions 
+at $\sqrt s_{NN}$ =  2.76 TeV.
+  Our model with both, gluon dissociation and nuclear absorption describes the data very well although, 
+slight difference in most central collisions may be due to reduction of binding energy of quarkonia with temperature 
+and lowering of quark mass.
+
+
+
+\noindent
+\begin{thebibliography}{100}
+\medskip
+\bibitem{INTRO} I. Arsene {\it et al.} [BRAHMS Collaboration], Nucl. Phys. A {\bf 757}, 1 (2005); 
+  B.B. Back {\it et al.} [PHOBOS Collaboration], Nucl. Phys. A {\bf 757} 28.(2005); 
+  J. Adams {\it et al.} [STAR Collaboration], Nucl. Phys. A {\bf 757}, 10.(2005); 
+  K. Adcox {\it et al.} [PHENIX Collaboration], Nucl. Phys. A {\bf 757} 184 (2005).
+\bibitem{QGP_Tc} B. Muller, J. Schukraft and B. Wyslouch, Ann. Rev. Nucl. Part. Sci., arXiv:1202.3233 [hep-ex].
+\bibitem{SATZ} T. Matsui and H. Satz, Phys. Lett. B{\bf 178}, 416 (1986).
+\bibitem{ALICEJPsi} Enrico Scomparin (for the ALICE Collaboration) Nucl. Phys. A {\bf 904} 202 (2013).
+\bibitem{JCMS} S. Chatrchyan {\it et al.} [CMS Collaboration] J. High Energy Phys. {\bf 1205}, 63 (2012); arXiv: 1201.5069 [nucl-ex]..
+\bibitem{CMSJPsi} Camelia Minrov (for the CMS Collaboration) Nucl. Phys. A {\bf 904} 194 (2013).
+\bibitem{PHENIXJPsi} A. Adare {\it et al.} [PHENIX Collaboration] Phys. Rev. C {\bf 84}, 054912 (2011); arXiv:1103.6269.
+\bibitem{CMSUpsilon} S. Chatrchyan {\it et al.} [CMS Collaboration], Phys. Rev. Lett. {\bf 109} 222301 (2012). 
+\bibitem{UCMS} S. Chatrchyan {\it et al.} [CMS Collaboration] Phys. Rev. Lett. {\bf 107}, 052302 (2011).
+\bibitem{Xu} X. M. Xu, D. Kharzeev, H. Satz, and X.N. Wang, Phys.Rev. C {\bf 53}, 3051 (1996), hep-ph/9511331
+\bibitem{Thews} R. L. Thews, M. Schroedter, J. Rafelski, Phys. Rev. C {\bf 63}, 054905 (2001), hep-ph/0007323.
+\bibitem{Andronic_SH1} A. Andronic, P. Braun-Munzinger, K. Redlich, J. Stachel, Phys. Lett. B {\bf 571}, 36 (2003), nucl-th/0303036.
+\bibitem{Andronic_SH2} A. Andronic, P. Braun-Munzinger, K. Redlich, J. Stachel Nucl. Phys. A {\bf 905} 535 (2013), arXiv:1210.7724.
+\bibitem{YSuppAbdShuk} A. Abdulasalam and P. Shukla, Int.J.Mod.Phys. {\bf A} 28 (2013) 1350105; arXiv:1210.7584.
+\bibitem{Grandchamp} L. Grandchamp and R. Rapp, Phys. Lett. B {\bf 523}, 60 (2001), hep-ph/0103124.
+\bibitem{Vogt} R. Vogt, Phys. Rev. C{\bf 81}, 044903 (2010); arXiv:1003.3497.
+\bibitem{Rapp1} X. Zhao and R. Rapp, Nucl. Phys. A{\bf 859}, 114 (2011); arXiv:1102.2194. 
+\bibitem{Rapp2} X. Zhao and R. Rapp, Phys. Rev. C{\bf 82}, 064905 (2010); arXiv:1008.5328.
+\bibitem{CTEQ6} J.~Pumplin, D.~R.~Stump, J.~Huston, H.~L.~Lai, P.~M.~Nadolsky 
+and W.~K.~Tung,  JHEP {\bf 0207}, 012 (2002) [arXiv:hep-ph/0201195];
+  D.~Stump, J.~Huston, J.~Pumplin, W.~K.~Tung, H.~L.~Lai, S.~Kuhlmann  and J.~F.~Owens,
+  JHEP {\bf 0310}, 046 (2003)  [arXiv:hep-ph/0303013].
+\bibitem{EPS09} K. J. Eskola, H. Paukkunen and C. A. Salgado, JHEP{\bf 0904}, 065 (2009); arXiv:0902.4154.
+\bibitem{CNV} M. Cacciari, P. Nason and R. Vogt, Phys. Rev. Lett.{\bf 95}, 122001 (2005).
+\bibitem{MNR} M. L. Mangano, P. Nason, and G. Ridolfi, Nucl. Phys. B{\bf 373}, 295 (1992).
+\bibitem{ContinuumVKShuk} V. Kumar, P. Shukla and R. Vogt, Phys. Rev. C{\bf 86}, 054907 (2012).
+\bibitem{PbPbTotal} S. Chatrchyan {\it et al.} [CMS Collaboration] Phys. Rev. C {\bf 84}, 024906 (2011).
+\bibitem{RAPc}R. L. Thews, arXiv: hep-ph/0206179.
+\bibitem{Pythia1} Torbjorn Sjostrand, Stephen Mrenna, Peter Z. Skands J. High Energy Phys. {\bf 0605}, 026 (2006). 
+\bibitem{Pythia2} Torbjorn Sjostrand, Stephen Mrenna, Peter Z. Skands Comput.Phys.Commun. {\bf 178} 852-867 (2008).
+\bibitem{MULT} K. Aamodt {\it et al.} [ALICE collaboration], Phys. Rev. Lett. {\bf 106}, 032301 (2011);
+          arXiv:1012.1657 [nucl-ex].
+\bibitem{ks95}D.~Kharzeev and H.~Satz, CERN-TH/95-117, BI-TP 95/20,
+         {\it Quark-Gluon Plasma II}, R. C. Hwa (Ed.) (World Scientific, Singapore)
+\bibitem{THEWF} R.L. Thews and M.L. Mangano, arXiv:nucl-th/05050552 (2006).
+\bibitem{MUNZI} P. Braun-Munzinger and J. Stachel Phys. Lett. B {\bf 490} 196 (2000).
+\bibitem{GM_PShukla} P. Shukla arXiv: nucl-th/0112039. 
+\bibitem{vogt2} R. Vogt, M. Prakash, P. Koch, T. H. Hunsson Phys. Lett. B {\bf 207}, 263 (1988). 
+\end{thebibliography}
+\end{document}

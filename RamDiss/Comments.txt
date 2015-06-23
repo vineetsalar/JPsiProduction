@@ -1,0 +1,24 @@
+--- On Mon, 22/8/11, Ramona Vogt <rlvogt@lbl.gov> wrote:
+
+> From: Ramona Vogt <rlvogt@lbl.gov>
+> Subject: Re: Fw: Thermal paper pdf
+> To: "Prashant Shukla" <pshuklabarc@yahoo.co.in>
+> Date: Monday, 22 August, 2011, 8:59 PM
+> new c-cbar and b-bbar calculations,
+> including single muon cuts (I'm not sure I
+> did that right though, it's the first time I've used the
+> program in that mode).
+> To normalize correctly for the distributions, divide by the
+> bin
+> widths,that should
+> give the absolute cross sections in mub. Also, the
+> branching ratios for leptons
+> are not included in the dimuon distributions, they need to
+> be multiplied in.
+>
+> I didn't have time to deal with the Drell-Yan this
+> weekend.
+>
+> best regards,
+> Ramona
+>

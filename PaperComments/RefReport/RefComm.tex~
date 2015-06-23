@@ -1,0 +1,456 @@
+\documentclass[aps,prc,preprint,superscriptaddress,showpacs,showkeys]{revtex4-1}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+
+\begin{document}
+{\Large \bf Commnets on ``Quarkonia suppression in PbPb collisions at $\sqrt s_{NN}$ =  2.76 TeV''}
+%\author{\large Vineet Kumar}
+%\author{\large Prashant Shukla}
+
+%\maketitle
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+{\Large GENERAL PROBLEMS WITH MANUSCRIPT}
+
+%\section{PROBLEMS WITH MANUSCRIPT}
+
+
+\section{Figures}
+In reviewing the figures of your paper, we note that the following
+changes would be needed in order for your figures to conform to the
+style of the Physical Review.  Please check all figures for the
+following problems and make appropriate changes in the text of the
+paper itself wherever needed for consistency.
+\begin{itemize}
+\item Figure(s) [2]
+          Captions to color PostScript figures should begin with
+          "(Color online)", unless they are to be published in
+          color in print, in which case they should begin "(Color)".
+
+\item Figure(s) [5-7]
+          Figure sublabels should be printed on the figures.
+          The preferred form is lowercase letters in parentheses:
+          (a), (b), etc.
+
+\item Figure(s) [5-7]
+          Please increase the font size (axis labels, axis scale
+          values, legend, etc.). Please ensure that all lettering is
+          2 mm or larger (1.5 mm for superscripts and subscripts)
+          after scaling to the final publication size. Note that
+          the column width is 8.6 cm (twice that amount plus gutter
+          for extra wide figures).
+\end{itemize}
+
+{\color{blue} All above suggestions are implemented.}
+
+\section{REFERENCES}
+
+Please remove the redundant arXiv or DOI references for published
+papers. For your information, the editorial office checks
+the references at several crucial steps during the editorial
+process. A list of unnecessary arXiv references slows the process
+down considerably--particularly so, if the list is long--and delays
+the processing of your manuscript.
+
+Please note that the copy editors will remove such redundant links
+during production for those papers that have been accepted for
+publication. However, any manual intervention carries the risk of
+inadvertently introducing mistakes.
+
+{\color{blue} Done}
+
+
+
+\newpage
+
+
+{\Large Report of the Referee -- CX10370/Kumar}
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+{\color{red} First of all, I would like to apologize to the authors for the delay
+to produce this report.
+
+This paper discusses the important topic of quarkonium (J/psi,
+Upsilon, Upsilon') suppression in PbPb collisions at the LHC. The
+suppression is calculated in a model which include various hot medium
+effects (gluon dissociation, recombination, pion dissociation) in
+addition to nuclear PDF corrections. The results are compared to ALICE
+and CMS measurements.
+
+I list below several comments and points which should be addressed
+before I can recommend the paper to be published in Physical Review C.}
+
+{\color{blue} We thank the referee for his suggestions. We have incorporated most 
+of the suggestions. Some of them required considerable work to improve the manuscript. }
+
+
+\section{Nuclear PDF (nPDF) effects}
+%{\color{declared-color} some text}
+
+\begin{enumerate}
+\item { \color{red} The authors use only the central set of the EPS09 parametrization
+instead of calculating the EPS09 uncertainty. Therefore it is
+difficult for the reader to assess the uncertainty coming from nuclear
+PDF corrections at the LHC. If it is numerically too difficult to
+compute the EPS09, they could use for instance another nPDF set, e.g.
+the recent DSSZ.}
+
+{\color{blue} We include uncertanity due to all sets of EPS09 parametrization of nPDFs. This
+uncertanity band is shown in figures with the central value of CNM effects.} 
+
+\item { \color{red} There is little detail on how nPDF effects are computed. For
+instance, it would be interesting to know what is the hard scale used
+in the calculation. In particular, does it depend on pT? Also, it is
+not clear to me how the heavy-quarkonium production cross section is
+computed. I understand that heavy quark production is computed using
+Refs. [26,27] but one needs a specific model in order to compute the
+production of Q-Qbar bound states. Is it CEM?}
+
+{\color{blue} 
+
+%We take $\mu_F/m_T$ = $\mu_R/m_T$ = 1 as the central values for charm and bottom production. 
+%Here $\mu_F$ is the factorization scale, $\mu_R$ is the renormalization scale, and
+%$\sqrt{m_T = m^2 + p_T^2}$.
+% We include uncertanity due to all sets of EPS09 parametrization of nPDFs [20].
+%This uncertanity band is shown with the central value of CNM effects.
+%   Heavy-quarkonium production cross section is computed using the Color Evaporation model [29]. 
+%The Ref. [29] is newly added. 
+
+% \begin{itemize}
+
+%%\cite{Vogt:2010aa}
+%\item [20]  R.~Vogt, ``Cold Nuclear Matter Effects on $J/\psi$ and $\Upsilon$ Production at the LHC,''
+%  Phys.\ Rev.\ C {\bf 81}, 044903 (2010)
+%  [arXiv:1003.3497 [hep-ph]]. 
+
+%   %\cite{Nelson:2012bc}
+% \item [29] R.~E.~Nelson, R.~Vogt and A.~D.~Frawley,
+%   `Narrowing the uncertainty on the total charm cross section and its effect on the J/ψ cross section,''
+%   Phys.\ Rev.\ C {\bf 87}, no. 1, 014908 (2013)
+%   [arXiv:1210.4610 [hep-ph]].
+
+%\end{itemize}
+
+    We have recalculated all the cross sections presented in the table I using all new sets of PDFs 
+and parameters tuned to reproduce the measured data. We have taken help from Prof Ramona Vogt and hence 
+she has agreed to be author of the new version. The details are given in paper are presented as follows: 
+
+   We use the same set of parameters as that of Ref.~\cite{Cacciari:2005rk}, with $m_c = 1.5$ GeV/$c^2$ and 
+  $m_b = 4.75$ GeV/$c^2$ along with $\mu_F/m_T$ = $\mu_R/m_T$ = 1 as central values for charm 
+  and bottom production, respectively.  The large uncertainties on these calculations can be
+  reduced by fitting the scales to the total cross section data, as done in Ref.~\cite{Nelson:2012bc} 
+  for charm. We get a larger total charm cross section than the results given in the previous version
+  where we had used  $m_c = 1.2$ GeV/$c^2$. The Heavy-quarkonium production cross sections
+  are calculated using the Color Evaporation model~\cite{Nelson:2012bc}. These are also recalculated 
+  using the new PDFs over those presented in previous version. 
+
+
+\bibitem{Cacciari:2005rk} 
+  M.~Cacciari, P.~Nason and R.~Vogt,
+  ``QCD predictions for charm and bottom production at RHIC,''
+  Phys.\ Rev.\ Lett.\  {\bf 95}, 122001 (2005).
+  %[hep-ph/0502203].
+
+\bibitem{Nelson:2012bc}
+  R.~E.~Nelson, R.~Vogt and A.~D.~Frawley,
+  `Narrowing the uncertainty on the total charm cross section and its effect on the J/$\psi$ cross section,''
+  Phys.\ Rev.\ C {\bf 87}, no. 1, 014908 (2013).
+  %[arXiv:1210.4610 [hep-ph]].
+
+
+
+}
+
+\item { \color{red} The nPDF effects seem to have a small but visible dependence on the
+centrality of the collision, however the default EPS09 set has no
+impact parameter (spatial) dependence. The authors should clarify the
+origin of this Npart dependence. I am also quite surprised to see that
+in the CMS kinematics, pT $\geq$ 6.5 GeV, the nPDF effects lead to an
+enhancement (due to anti-shadowing), I was not expecting this because
+of the rather small values of x$_{Bj}$ typically probed at the LHC.}
+
+{
+\color{blue} 
+%We have to find some reasonable response for this comment. Probably we have to scale it
+%with T$_{AA}$ instead of N$_{\rm Part}$
+
+ The EPS09 set gives $p_T$ dependent shadowing factors and uncertainties. 
+ To get $N_{\rm Part}$ dependence the $p_T$ integrated shadowing factor is linearly scaled by the 
+variable $d$ (=$N_{\rm Coll}$ / ($N_{\rm Part}\times$0.5)) which mimics the density in the overlapping 
+zone using minimum bias value and pp value which is 1.
+
+%  $d \approx$ 6.4. 
+ }
+
+
+\item { \color{red} This is a detail but it is more appropriate to mention 'nuclear PDF
+effects' instead of 'shadowing' which only applies to the small-x
+depletion of the PDF in nuclei (one can see the effect of
+anti-shadowing and the EMC effects in Fig. 5 left and Fig. 6 right).}
+{\color{blue} We agree with it and in the figures we mention CNM Effects (Cold
+Nuclear Matter Effects) and also change the title of section 2. }
+
+\end{enumerate}
+
+
+\section{Pion dissociation}
+
+\begin{enumerate}
+
+\item { \color{red} The authors use an arbitrary cross section of 1 mb independently of
+the pion energy. They mention that this cross section is small,
+however this is very similar in magnitude to the gluon-quarkonium
+cross section, see Fig. 2. 
+In order to have a consistent framework, the authors should rather use
+the pQCD quarkonium-pion cross section, directly accessible from the
+convolute the quarkonium-gluon cross section (Fig. 2) with the gluon
+distribution in a pion, see Refs. [16,33,34] (see e.g. Ref. [34] in
+which the quarkonium-pion cross section has a rapid variation with the
+pion energy).}
+
+{\color{blue} 
+  Following referee's suggestion we have reworked this section dealing with hadronic comover.
+  The pion-Quarkonia cross section is calculated by convoluting the gluon-quarkonia cross section $\sigma_D$
+over the gluon distribution inside pion [38] as 
+
+\begin{equation}
+\sigma_{\pi Q} (p_{\pi}) = {p_+^2 \over 2(p_\pi^2 - m_\pi^2)} \int_0^1 \, dx \, G(x) \, \sigma_D(xp_+/\sqrt {2}) 
+\end{equation}
+
+where $p_+ = (p_\pi + \sqrt{p_\pi^2-m_\pi^2})/\sqrt{2}$. The gluon distribution $G(x)$ inside pion is 
+given by GRV parameterization [42]. 
+
+
+\begin{itemize}
+% \item G. Bhanot and M. E. Peskin, “Short Distance Analysis for Heavy Quark Systems. 2. Applications,” Nucl. Phys. B 156, 391 (1979).
+% \item  F. Karsch, M. T. Mehr and H. Satz, “Color Screening and Deconfinement for Bound States of Heavy Quarks,” Z. Phys. C 37, 617 (1988).
+ \item [38] F. Arleo, P. B. Gossiaux, T. Gousset and J. Aichelin, Phys. Rev. D 65, 014005 (2002) [hep-ph/0102095].
+ \item [42] M. Glueck, E. Reya, A. Vogt, Z. Phys. C{\bf 53} 651 (1992).
+\end{itemize}
+
+}
+
+\item { \color{red} Apart from the energy dependence, the magnitude of the pion-J/$\psi$ and
+pion-$\Upsilon$ cross section should not be the same, the latter being
+smaller than the former by a factor 4-5.}
+
+{\color{blue} 
+%This will be automatically solved if we are able to use the p$_{T}$ dependent cross-section.
+ This problem is taken care care when we use above procedure.
+}
+
+\item { \color{red} I fail to understand to understand why pion dissociation is much
+less effective for $\Upsilon$ than for J/$\psi$ (compare Fig. 6 left and
+Fig. 7 left), since the cross section is taken to be equal. Is it due
+to the different p$_T$ spectrum?}
+
+{ \color{blue} It was due to different $p_T$ spectra. But now the cross section for 
+$\Upsilon$ is smaller as compared to J/$\psi$ due to tighter binding of $\Upsilon$. }
+
+\item { \color{red} Also, what is assumed for the quarkonium(2S)-pion cross section? It
+should be significantly larger than the quarkonium(1S)-pion cross
+section. As a matter of fact, the comover effect seems more pronounced
+on 2S states (compare Fig. 7 left and right) but nothing is said on
+the comover effects on 2S in the model.}
+
+{ \color{blue} The comover effect on $\Upsilon$(2S) is calculated as per above procedure now.
+
+
+%It is mass effect. Mass of
+%$\Upsilon$(2S) is significantly larger than $\Upsilon$(1S).
+}
+
+\end{enumerate}
+
+
+\section{Hydrodynamical evolution}
+
+\begin{enumerate}
+\item { \color{red} The authors assume a transverse expansion of the medium, see Eq.
+(8). In non-central collisions, however, the expansion should depend
+on the azimuthal angle, leading to non-negligible elliptic flow. I
+think the authors should comment on that.}
+
+{ \color{blue} There will be azimuthal-anisotropy with respect to reaction plane. But this
+effect will be averaged out over a large number of collisions.}
+
+\end{enumerate}
+
+\section{Comparison to data}
+
+\begin{enumerate}
+
+\item { \color{red} In order to have a meaningful comparison to data, I think the
+authors should try to quantify the uncertainty of their calculation.
+For instance, the most important effects in their model are gluon
+dissociation and recombination, which crucially depends on the
+quarkonium-gluon cross section. How would the predictions vary if they
+change the magnitude of this cross section (which is poorly known) by,
+say, a factor 1.5 or 2?}
+
+{ \color{blue} 
+%It can be implemented easily by hnad. We should check the effects on the final R$_{AA}$. We will check it by multipling by
+%a factor of 1.5.
+  The dominant sources of the uncretainties come from the gluon quarkonia cross section and initial temperature 
+(discussed in next point). We vary the quarkonium-gluon cross section by a factor of 0.5 and 1.5 arround the
+calculated value and obtain the variation in the final R$_{AA}$ calculations.   
+}
+
+\item { \color{red} Similarly, the magnitude on the medium energy density could be
+varied in order to give a feeling to the reader on the corresponding
+uncertainty on $R_{AA}$. Clearly the calculations are done for one set
+of parameters and assumptions, it's difficult to know how the
+predictions would change when those are varied.}
+
+
+{ \color{blue} We calculate the initial temperature using 
+measured charged particle density and assuming a value for $\tau_0$. 
+We change it in reasonably large range from 0.1 to 0.6 fm/$c$ and the variation in  
+$R_{AA}$ is calculated.
+ Both of these uncertainties are added in quadrature to obtain the band. 
+
+%nd see the effect. May be
+%we can put a uncertanity band for this.
+%Main perameters in our model are $\tau_0$, $T_C$ and some volume element 
+%perameters. We can check the effects of these on the final results. Another thing may be to calculate the 
+%rapidity dependent energy density by using rapidity dependent dN/d$\eta$. May be it does not make much sense because
+%our calculations are in mid rapidity.
+
+}
+
+\item { \color{red} In this respect, many effects are included... but with uncertainty
+which are not quantified. Since the effects of nPDF or comover affect
+R$_{AA}$ by at most 20$\%$, I think it would make more sense not to include
+them at all. In particular, the authors include effects with magnitude
+10-20$\%$ while other cold nuclear matter effects such as energy loss in
+nuclei prove much stronger (see e.g. 40$\%$ effects on J/psi in
+arXiv:1407.5054) but are not included.}
+
+{ \color{blue} 
+  The uncertainites in the calculation are quantified. We still include CNM and comover effect.
+  The prescriptions for change in the $R_{AA}$ of quarkonia due to initial energy loss in nuclei are 
+still evolving we have not included this effect. It can be included in a future work. 
+%Have to be seen in the reference. 
+}
+
+
+\item { \color{red} Also, the authors do not discuss the dissociation of
+heavy-quarkonium due to the Debye screening of the heavy-quark
+potential at finite temperature, which is historically the main effect
+discussed in Ref. [1]. Do they consider it to be negligible? This
+point would need to be discussed.}
+
+
+{ \color{blue} The suppression of quarkonia can be understood in terms of 
+gluon dissociation and/or color screening. 
+  There is more colour screening at higher temperature. The gluon dissociation will also
+be larger due to harder gluon momentum distribution.
+  At higher temperature the gluon dissociation cross section can also increase due to colour 
+screening and this effect must come in the uncertainty due to variation of the cross section.
+}
+
+
+
+\item { \color{red} Fig. 6 left and Fig. 7 left are a bit misleading because data points
+corresponding to two different kinematical regions are included, but
+only one calculation is provided and it is not possible to know which
+region it corresponds to.}
+
+{ \color{blue} 
+  The calculations in this figure was for mid-rapidity. Now we have separated the forward 
+rapidity and mid rapidity calculations in different figures.  
+}
+
+\item { \color{red} The authors present a model for $\Upsilon$(2S) and not for $\psi$(2S). 
+I understand that for charmonia, and in particular 2S states, the pQCD
+cross section may not be valid but still it would be very interesting
+for the reader to know the model predictions. In particular, the CMS
+experiment reported on a very interesting behavior of $\psi^{'}$/J/$\psi$ in
+PbPb collisions, and it seems natural to wonder whether or not the
+possibly large recombination in the $\psi^{'}$ channel could compare to
+these data.}
+
+{ \color{blue}   Since the $\psi$(2S) cross-section is not reliable so we have avoided to 
+speculate on the charmonia ratio. }
+\end{enumerate}
+
+
+\section{Comparison to data}
+\begin{enumerate}
+
+\item { \color{red} Finally, many details or references are missing. In particular, why
+R$_{0-5\%}$=0.92 R$_{Pb}$? What is the value of a$_m$? Which values are taken
+for m$_c$ and m$_b$? It is also not clear to me why they need to compute
+the entropy S(tau) in Eqs. (10,11), I probably missed the point.}
+
+{\color{blue} The value of a$_m$ is 5 for QGP. %We use m$_c$ = 1.87 GeV and m$_b$ = 4.2 GeV 
+%and section 2 is expanded to include these details. 
+  R$_{0-5\%}$=0.96 R$_{\rm Pb}$ is obtained by  R$_{0-5\%}$ = R$_{\rm Pb}$ \, $\sqrt{N_{part,0-5}/N_{part,0}}$
+where $N_{part,0}$ is number of participants in head on collision (b=0). The correct value is 0.96. 
+ First we get the initial entropy for 0-5\% case from Eq. 11 and then use Eq. 10 to obtain entropy for
+other centralities using the experimental measurement of ratio. 
+}
+
+
+\item { \color{red} On page 6, the reference to an experimental paper on dN/deta is
+missing.}
+
+{\color{blue} The Ref. 31 and 34 (new) are for ALICE. We have included the CMS reference [32] also.}
+
+
+\item { \color{red} On Fig. 3, what is the rapidity of the quarkonium states? Is it
+mid-rapidity? Maybe it would be more relevant to draw curves for a
+given quarkonium energy E instead of binning in pT. It would also be
+interesting to have the equivalent of Fig. 3 and 4 for 2S states.}
+
+{\color{blue} 
+Fig. 3 shows the calculations in mid rapidity. 
+%This is also realted to the forward rapidity question. We can include the rapidity dependence by
+%including y dependent gluon distribution and by putting p = p$_{\rm T}$ coshy in the formula of dissociation rate.
+%see ref. arxiv:1005.1208 by authour U. Jameel and DKS.
+%p$^{2}$ = p$_{\rm T}^{2}$ + m$_{\rm T}^{2} \cdot$sinhy
+}
+
+\end{enumerate}
+
+{ \color{red} In conclusion, it would be valuable to address/answer these various
+points in a revised version of the manuscript before I can recommend
+its publication in Physical Review C.}
+
+{ \color{blue} We have done considerable work to improve the manuscript so that almost all of the 
+suggestions are incorporated. The revised manuscript is submitted.} 
+
+\section{Additional improvements}
+
+\begin{enumerate}
+
+
+
+\item { \color{blue} We improved the calculations for the hevay flavour and quarkonia cross-sections. These calculations
+  are improved by using latest PDFs also mass of charm and bottom quarks is tuned in such a way that it give
+  better fitting to measured total charm production cross-section. Cross-sections and corresponding uncertainties 
+  are shown in the table I.  }   
+
+\item { \color{blue} Figures 3 (a) and 3(b) have same y axis ranges now similarly y axis ranges of Figures 4 (a) and 4(b) is 
+  identical. }
+  
+%\item { \color{blue} We introduced a formula relating p$_{\pi}$ and center of mass energy $\sqrt{s}$ in section IV. } 
+  
+\item { \color{blue} We changes the order of figures. Now mid rapidity measurements of CMS and ALICE for J/$\psi$ nuclear modification
+  factor is shown together in Figure 7(a) and 7(b). ALICE measurement in forward rapidity is shown separately in Figure 6.
+  Similarly $\Upsilon$ measurements of CMS and ALICE are shown separately in Figure 8 and Figure 9 respectively.}        
+
+ 
+\end{enumerate}
+
+
+
+
+
+\end{document}

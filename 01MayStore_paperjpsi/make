@@ -1,0 +1,1 @@
+latex jpsiPaper.tex;latex jpsiPaper.tex;latex jpsiPaper.tex;dvipdf jpsiPaper.dvi;evince jpsiPaper.pdf&

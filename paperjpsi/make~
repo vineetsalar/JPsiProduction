@@ -1,0 +1,1 @@
+pdflatex jpsiPaper.tex;pdflatex jpsiPaper.tex;pdflatex jpsiPaper.tex;open jpsiPaper.pdf&

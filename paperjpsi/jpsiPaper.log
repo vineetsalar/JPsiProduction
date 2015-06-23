@@ -1,0 +1,415 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.7.12)  18 MAY 2015 17:38
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**jpsiPaper.tex
+(./jpsiPaper.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+(./revtex4-1.cls
+Document Class: revtex4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revt
+ex4/ for documentation)
+ Copyright (c) 2009 The American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <arthur_ogawa at sbcglobal dot net>
+ Based on work by David Carlisle <david at dcarlisle.demon.co.uk>.
+ltxutil[2010/07/25/20:33:00 4.1r utilities package (portions licensed from W. E
+. Baxter web at superscript.com)]
+LaTeX Info: Redefining \@centercr on input line 308.
+Class revtex4-1 Info: Repairing broken LaTeX eqnarray on input line 358.
+\eqncolsep=\skip41
+Class revtex4-1 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
+note on input line 433.
+Class revtex4-1 Info: Repairing broken LateX \@sect on input line 755.
+\intertabularlinepenalty=\count79
+\@tbpen=\count80
+\@arstrutbox@hline=\box26
+Class revtex4-1 Info: Repairing broken LaTeX \@xbitor on input line 1786.
+Class revtex4-1 Info: Making \typeout \long on input line 2046.
+ltxfront[2010/07/25/20:33:00 4.1r frontmatter package (AO,DPC)]
+\c@affil=\count81
+\c@collab=\count82
+\absbox=\box27
+ltxgrid[2010/07/25/20:33:00 4.1r page grid package (portions licensed from W. E
+. Baxter web at superscript.com)]
+\c@linecount=\count83
+\output@latex=\toks14
+\box@size@1=\box28
+\box@size@2=\box29
+\@protection@box=\box30
+\@topmark@saved=\toks15
+\footins@saved=\box31
+\footins@recovered=\box32
+\column@recovered=\box33
+\pagesofar=\box34
+\footsofar=\box35
+\pagegrid@col=\count84
+Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
+ \\  on input line 5578.
+\c@part=\count85
+\c@section=\count86
+\c@subsection=\count87
+\c@subsubsection=\count88
+\c@paragraph=\count89
+\c@subparagraph=\count90
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count91
+\fbox@1=\box36
+\c@table=\count92
+\fbox@2=\box37
+\c@video=\count93
+\fbox@4=\box38
+\@bibdataout=\write3
+\widetext@top=\box39
+\widetext@bot=\box40
+Class revtex4-1 Info: Selecting society aps on input line 7542.
+(./aps4-1.rtx
+File: aps4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for docu
+mentation)
+Class revtex4-1 Info: RevTeX society APS selected on input line 31.
+)
+Class revtex4-1 Info: Selecting journal prc on input line 7544.
+Class revtex4-1 Info: APS journal PRC selected on input line 7545.
+ (./aps12pt4-1.rtx
+File: aps12pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
+documentation)
+Class revtex4-1 Info: RevTeX pointsize 12pt selected on input line 30.
+) (./textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip44
+\bibsep=\skip45
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count94
+)
+Class revtex4-1 Info: Repairing natbib's \BibitemShut on input line 7549.
+ (./revsymb4-1.sty
+Package: revsymb4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ f
+or documentation)
+LaTeX Info: Redefining \REV@mathfrak on input line 119.
+)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen102
+\Gin@req@width=\dimen103
+)
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Package option `usenames' ignored on input line 216.
+Package xcolor Info: Driver file: dvips.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen104
+\extrarowheight=\dimen105
+\NC@list=\toks17
+\extratabsurround=\skip46
+\backup@length=\skip47
+)
+\everycr=\toks18
+\minrowclearance=\skip48
+)
+\rownum=\count95
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)
+(/usr/share/texmf/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2007/01/21 v2.11 Predefined colors according to SVG 1.1 (UK)
+))
+Class revtex4-1 Info: colortbl package is loaded. (Proceeding with fingers cros
+sed.) on input line 6.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 6.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 6.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 6.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 6.
+ (./jpsiPaper.aux)
+\openout1 = `jpsiPaper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+\openout3 = `jpsiPaperNotes.bib'.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 34.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 34.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 34.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 45.
+ [1] [2]
+[3] [4] [5]
+
+! LaTeX Error: Cannot determine size of graphic in Fig1a_TauVsTemp.pdf (no Boun
+dingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 ...idth=0.49\textwidth]{Fig1a_TauVsTemp.pdf}
+                                                  
+? 
+File: Fig1a_TauVsTemp.pdf Graphic file (type eps)
+<Fig1a_TauVsTemp.pdf>
+
+! LaTeX Error: Cannot determine size of graphic in Fig1b_TauVsFQGP.pdf (no Boun
+dingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.269 ...idth=0.49\textwidth]{Fig1b_TauVsFQGP.pdf}
+                                                  
+? 
+File: Fig1b_TauVsFQGP.pdf Graphic file (type eps)
+<Fig1b_TauVsFQGP.pdf> [6] [7]
+
+! LaTeX Error: Cannot determine size of graphic in Fig2_SigmaDq0.pdf (no Boundi
+ngBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.317 ...[width=0.60\textwidth]{Fig2_SigmaDq0.pdf}
+                                                  
+? 
+File: Fig2_SigmaDq0.pdf Graphic file (type eps)
+<Fig2_SigmaDq0.pdf>
+
+! LaTeX Error: Cannot determine size of graphic in Fig3a_DRateVsT.pdf (no Bound
+ingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.323 ...width=0.49\textwidth]{Fig3a_DRateVsT.pdf}
+                                                  
+? 
+File: Fig3a_DRateVsT.pdf Graphic file (type eps)
+<Fig3a_DRateVsT.pdf>
+
+! LaTeX Error: Cannot determine size of graphic in Fig3b_DRateVsPt.pdf (no Boun
+dingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.324 ...idth=0.49\textwidth]{Fig3b_DRateVsPt.pdf}
+                                                  
+? 
+File: Fig3b_DRateVsPt.pdf Graphic file (type eps)
+<Fig3b_DRateVsPt.pdf> [8]
+
+! LaTeX Error: Cannot determine size of graphic in Fig4a_FRateVsT.pdf (no Bound
+ingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.353 ...width=0.49\textwidth]{Fig4a_FRateVsT.pdf}
+                                                  
+? 
+File: Fig4a_FRateVsT.pdf Graphic file (type eps)
+<Fig4a_FRateVsT.pdf>
+
+! LaTeX Error: Cannot determine size of graphic in Fig4b_FRateVsPt.pdf (no Boun
+dingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.354 ...idth=0.49\textwidth]{Fig4b_FRateVsPt.pdf}
+                                                  
+? 
+File: Fig4b_FRateVsPt.pdf Graphic file (type eps)
+<Fig4b_FRateVsPt.pdf>
+
+! LaTeX Error: Cannot determine size of graphic in Fig5a_ALICE_RAAPt.pdf (no Bo
+undingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.360 ...th=0.49\textwidth]{Fig5a_ALICE_RAAPt.pdf}
+                                                  
+? 
+File: Fig5a_ALICE_RAAPt.pdf Graphic file (type eps)
+<Fig5a_ALICE_RAAPt.pdf>
+
+! LaTeX Error: Cannot determine size of graphic in Fig5b_CMS_RAAPt.pdf (no Boun
+dingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.361 ...idth=0.49\textwidth]{Fig5b_CMS_RAAPt.pdf}
+                                                  
+? 
+File: Fig5b_CMS_RAAPt.pdf Graphic file (type eps)
+<Fig5b_CMS_RAAPt.pdf>
+
+! LaTeX Error: Cannot determine size of graphic in Fig6_ALICE_RAANPart.pdf (no 
+BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.367 ...=0.60\textwidth]{Fig6_ALICE_RAANPart.pdf}
+                                                  
+? 
+File: Fig6_ALICE_RAANPart.pdf Graphic file (type eps)
+<Fig6_ALICE_RAANPart.pdf>
+
+! LaTeX Error: Cannot determine size of graphic in Fig7a_ALICE_RAANPartMid.pdf 
+(no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.373 ...9\textwidth]{Fig7a_ALICE_RAANPartMid.pdf}
+                                                  
+? 
+File: Fig7a_ALICE_RAANPartMid.pdf Graphic file (type eps)
+<Fig7a_ALICE_RAANPartMid.pdf>
+
+! LaTeX Error: Cannot determine size of graphic in Fig7b_CMS_RAANPart.pdf (no B
+oundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.374 ...h=0.49\textwidth]{Fig7b_CMS_RAANPart.pdf}
+                                                  
+? 
+File: Fig7b_CMS_RAANPart.pdf Graphic file (type eps)
+<Fig7b_CMS_RAANPart.pdf>
+
+! LaTeX Error: Cannot determine size of graphic in Fig8a_CMS_Y1SRAANPart.pdf (n
+o BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.381 ....49\textwidth]{Fig8a_CMS_Y1SRAANPart.pdf}
+                                                  
+? 
+File: Fig8a_CMS_Y1SRAANPart.pdf Graphic file (type eps)
+<Fig8a_CMS_Y1SRAANPart.pdf>
+
+! LaTeX Error: Cannot determine size of graphic in Fig8b_CMS_Y2SRAANPart.pdf (n
+o BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.382 ....49\textwidth]{Fig8b_CMS_Y2SRAANPart.pdf}
+                                                  
+? 
+File: Fig8b_CMS_Y2SRAANPart.pdf Graphic file (type eps)
+<Fig8b_CMS_Y2SRAANPart.pdf>
+
+! LaTeX Error: Cannot determine size of graphic in Fig9_ALICE_Y1SRAANPart.pdf (
+no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.388 ...49\textwidth]{Fig9_ALICE_Y1SRAANPart.pdf}
+                                                  
+? 
+File: Fig9_ALICE_Y1SRAANPart.pdf Graphic file (type eps)
+<Fig9_ALICE_Y1SRAANPart.pdf> [9] [10] [11] [12] [13] [14] [15] [16] [17]
+[18]
+No file jpsiPaper.bbl.
+[19] (./jpsiPaper.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
+
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3487 strings out of 493305
+ 45836 string characters out of 6139897
+ 135681 words of memory out of 5000000
+ 6943 multiletter control sequences out of 15000+600000
+ 11662 words of font info for 40 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 41i,10n,35p,1165b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on jpsiPaper.dvi (19 pages, 58084 bytes).

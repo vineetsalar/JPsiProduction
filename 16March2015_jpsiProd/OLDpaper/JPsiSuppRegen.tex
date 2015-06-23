@@ -1,0 +1,729 @@
+%\RequirePackage{lineno}
+\documentclass[aps,prc,preprint,superscriptaddress,showpacs,showkeys]{revtex4-1}
+\usepackage{graphicx}
+
+\begin{document}
+
+%\linenumbers
+
+\title{{\Large $J/\psi$ suppression and regenration in PbPb collisions at $\sqrt s_{NN}$ =  2.76 TeV }}
+
+\author{\large V. Kumar}
+\author{\large P. Shukla}
+\email{pshukla@barc.gov.in}
+\affiliation{Nuclear Physics Division, Bhabha Atomic Research Center, Mumbai, India}
+\affiliation{Homi Bhabha National Institute, Anushakti Nagar, Mumbai, India}
+
+\date{\today}
+
+
+\begin{abstract}
+
+Here we summarize $J/\psi$ suppression and regenration in quark gluon plasma. 
+We assume that thermal activation due to gluons is main mechanism for $J/\psi$
+break-up.
+ 
+
+\end{abstract}
+
+\pacs{12.38.Mh, 24.85.+p, 25.75.-q}
+
+\keywords{quark-gluon plasma, kinetic equation}
+
+
+\maketitle
+
+
+\section{Introduction}
+
+%%%% Taken from Upsilon ratio paper  %%%%%%%%%%%
+
+   The heavy ion collisions produce matter at extreme temperatures and densities where 
+it is expected to be in the form of Quark Gluon Plasma 
+(QGP), a phase in which the quarks and gluons can move far beyond  the size of a nucleon 
+making color degrees of freedom dominant in the medium. 
+  The experimental effort to produce such matter started with low energy CERN accelerator 
+SPS and evolved through voluminous results 
+from heavy ion collision at Relativistic Heavy Ion Collider (RHIC) \cite{INTRO}.
+The recent results from Large Hadron Collider (LHC) experiments \cite{QGP_Tc} are 
+pointing towards formation of high temperature system in many ways similar to the matter
+produced at RHIC. 
+  One of the most important signal of QGP is the suppression of 
+quarkonium states \cite{SATZ}, both of the charmonium ($J/\psi$, $\psi(2S)$, $\chi_{c}$, etc) 
+and the bottomonium ($\Upsilon(1S)$ , $\Upsilon(2S)$, $\chi_{b}$, etc) families. This is thought to be a 
+direct effect of deconfinement, when the binding potential between the constituents of a quarkonium state, 
+a heavy quark and its antiquark, is screened by the colour charges of the surrounding light quarks and gluons. 
+ The ATLAS and CMS experiments have carried out detailed quarkonia measurements in Pb+Pb collisions 
+with the higher energy and luminosity available at the LHC.
+ The ATLAS measurements \cite{ATLAS} show suppression of inclusive $J/\psi$ with high transverse momenta $p_T$  
+in central PbPb collisions compared to peripheral collisions at $\sqrt s_{NN} = 2.76$ TeV. 
+  Similarly, CMS measured a steady and smooth decrease of suppression 
+of prompt $J/\psi$ as a function of centrality with nuclear modification factor $R_{AA}$ remaining $<$ 1 even 
+in the peripheral bin \cite{JCMS}. 
+ 
+ The melting temperature of the quarkonia states depends on their binding energy. The ground states, 
+$J/\psi$ and $\Upsilon(1S)$ are expected to dissolve at significantly higher temperatures than the 
+more loosely bound excited states. 
+ 
+  The $\Upsilon(2S)$ and $\Upsilon(3S)$ have smaller binding energies as compared to ground
+state $\Upsilon(1S)$ and hence are expected to dissolve at a lower temperature. 
+ With the 2011 Pb+Pb run the CMS published results on sequential suppression of 
+$\Upsilon(nS)$ states as a function of centrality \cite{CMSU2} with enlarged statistics
+over their first measurement \cite{UCMS}, where a suppression of the excited $\Upsilon$ states with respect to the ground state have been observed  
+in PbPb collisions compared to pp collisions at $\sqrt s_{NN} = 2.76$ TeV.\cite{YSuppAbdShuk}
+
+  The quarkonia yields in heavy ion collisions are also modified due to non-QGP effects such as
+shadowing, an effect due to change of the parton distribution functions inside the nucleus,
+and dissociation due to nuclear or comover interaction \cite{Vogt}.
+
+
+  If large number of heavy quarks are produced in initial heavy ion collisions at LHC energy 
+this could even lead to enhancement of quarkonia via statistical recombination \cite{Rapp1,Rapp2}. 
+   
+ In this paper, we calculate the charmonia suppression due to thermal gluon activation  in an expanding
+QGP. Another sources which can alter the yield of charmonium are considered e.g. nuclear shadowing 
+and gluon saturation. Impact parameter dependence of parton distribution functions is also taken in account
+and at last we consider the effect of J/$\psi$ regeneration using the statistical hadronization model.
+J/$\psi$ yield is studied as a function of impact parameter or centerality of events. Calculations are compared
+with experimental data, where data is available.
+
+
+
+\section{Charm production rates}
+
+  
+  The large heavy quark mass allows their production to be calculated in 
+perturbative QCD.  We calculate the production cross sections for 
+$c\overline c$ and  $b\overline b$ pairs to NLO in pQCD \cite{GAVIN,LIN} using
+the CTEQ6M parton densities \cite{CTEQ6}.  The central EPS09 parameter set 
+\cite{EPS09} is used to calculate the modifications of the parton densities in 
+Pb+Pb collisions.  
+ 
+ We use the same set of parameters
+as that of Ref.~\cite{CNV} with the exclusive NLO calculation of Ref.~\cite{MNR}
+to obtain the exclusive $Q \overline Q$ pair rates as well as their decays
+to dileptons.  We take $m_c = 1.5$~GeV/$c^2$, $\mu_F/m_T = \mu_R/m_T = 1$ and  
+$m_b = 4.75$~GeV/$c^2$, $\mu_F/m_T = \mu_R/m_T = 1$ as the central values for
+charm and bottom production respectively.  Here $\mu_F$ is the factorization 
+scale, $\mu_R$ is the renormalization scale and $m_T = \sqrt{m^2 + p_T^2}$.  
+The mass and scale variations are added in quadrature to obtain the uncertainty
+bands \cite{CNV} \cite{ContinuumVKShuk}.
+    
+  
+  The production cross sections for heavy flavor at $\sqrt{s_{_{NN}}}= 2.76$ 
+TeV are shown in Table~\ref{NLOcros}.  The number of $Q \overline Q$ pairs
+in a minimum bias Pb+Pb event is obtained from the per nucleon cross
+section, $\sigma_{\rm PbPb}$, by
+
+\begin{eqnarray}
+N_{Q \overline Q} = {A^2 \sigma_{\rm PbPb}^{Q \overline Q}  \over  
+\sigma_{\rm PbPb}^{\rm tot}} \, \, .
+\end{eqnarray}
+
+At 2.76 TeV, the total Pb+Pb cross section, $\sigma_{\rm PbPb}^{\rm tot}$, 
+is 7.65 b \cite{PbPbTotal}.
+
+\begin{table}
+\caption[]{Heavy flavor cross sections at 
+$\sqrt{s_{_{NN}}}= 2.76$ TeV.  The cross sections are given per nucleon while
+$N_{Q \overline Q}$ and $N_{l^+ l^-}$ are the number of $Q \overline Q$ and lepton 
+pairs per Pb+Pb event.  The uncertainties in the heavy flavor cross section are
+based on the Pb+Pb central values with the mass and scale uncertainties added
+in quadrature.}
+\label{NLOcros}
+\begin{tabular}{c|c|c} 
+\hline 
+                 & $ c \overline c$     &J/$\psi$    \\
+                 
+\hline
+$\sigma_{\rm PbPb}$   & $1.76^{+2.32}_{-1.29}$ mb       & $31.4$ $\mu$b \\
+$N_{Q\overline Q}$      & $9.95^{+13.10}_{-7.30}$           & $0.177$     \\
+
+\hline
+\end{tabular}
+\end{table}
+
+
+
+
+\section{Shadowing of nuclear parton distribution function}
+
+ It will be updated from ferrero paper.
+ 
+
+
+
+\section{Nuclear Absorption}
+
+
+It will be updated later.
+
+
+\section{Statistical Hadronization Model}
+
+  The heavy quark production at LHC is substantial which may lead to incoherent 
+recombination of uncorrelated pairs of heavy quarks and anti quarks which result 
+from multiple pair production. Two different approaches have been considered;
+statistical hadronization and kinetic formation. 
+In statistical approach \cite{MUNZI} the number of J/$\psi$ produced is given by 
+
+  \begin{equation}
+N_{J/\psi} = 4 {n_{ch} n_{J/\psi} \over n_{\rm open}^2}  {N_{c\bar c}^2 \over N_{ch} }.
+\end{equation}
+where $n_i$'s are the thermal densities and $N_{c\bar c}$ is the number of charm pairs produced 
+and $N_{ch}$ is the number of total charged 
+particle produced. 
+
+The freeze out parameters are $T=170$ MeV and $\mu_B = 0$. For
+$dN_{ch}/dy = 1600$ \cite{MULT} and $dN_{c \bar c} /dy = 17.8$, we obtain $dN_{J/\psi} /dy = ?$.
+Now thermal densities can be calculated using thermal distributions of various particles.
+
+\begin{equation}
+n_{open} = {4\pi \,g_{D} \over (2\pi)^{3}} \int_{0}^{\infty} f_{D}(p)p^{2}dp 
+\end{equation}
+
+by the same method we can calculate the J/$\psi$ number density as
+\begin{equation}
+n_{J/\psi} = {4\pi \,g_{J/\psi} \over (2\pi)^{3}} \int_{0}^{\infty} f_{J/\psi}(p)p^{2}dp 
+\end{equation}
+
+N$_{c\bar{c}}$ = 17.8 as given in Table above. For total charge particle density We can use 
+
+\begin{equation}
+n_{ch} = n_{\pi^{+}} + n_{\pi^{-}} + n_{K^{+}} + n_{K^{-}} + n_{p} + n_{\bar{p}} 
+\end{equation}
+
+where
+\begin{equation}
+n_{\pi^{+}} = {4\pi \,g_{\pi} \over (2\pi)^{3}} \int_{0}^{\infty} f_{\pi{+}}(p)p^{2}dp
+\end{equation}
+
+
+and so on. 
+
+%\int_{\tau_0}^{\tau_f}
+
+
+\section{Kinetic Model}
+
+  In Kinetic approach \cite{THEWS} the proper time evolution of the $J/\psi$ population is given by the rate equation 
+\begin{equation}\label{eqkin}
+{dN_{J/\psi} \over d\tau}  = \lambda_F {N_c N_{\bar c} \over V(\tau)} - \lambda_D N_{J/\psi} \rho_g.
+\end{equation}
+
+with $\rho_g$ the number density of gluons, $\tau$ the proper time
+and $V(\tau)$ the volume of the deconfined spatial region.
+The reactivities $\lambda_{F,D}$ are
+the reaction rates $\langle \sigma v_{\mathrm{rel}} \rangle$
+averaged over the momentum distribution of the initial
+participants, i.e. $c$ and $\bar c$ for $\lambda_F$ and
+$J/\psi$ and $g$ for $\lambda_D$.
+The gluon density is determined by the equilibrium value in the
+QGP at each temperature.  For simplicity, it is assumed to be
+spatially homogeneous, as are the charm quark and $J/\psi$ distributions.
+
+We enforce exact charm conservation in solving this equation, but
+in practice this means that the number of charm quarks $N_c$
+and anticharm quarks $N_{\bar{c}}$ are always approximately equal
+to the number of initial pairs $N_{c\bar{c}}$ for the following reasons:
+(a) Reactions in which charm quark-antiquark pairs
+annihilate into light quarks or gluons are small since the charm
+density due to initial charm is less than the thermal equilibrium
+value during most of the time; (b) Production of additional
+charm quark pairs from interactions of light quarks and gluons is
+negligible during the time of deconfinement \cite{letessier};
+(c) Formation of other states in the charmonium spectrum is a small
+fraction of initial charm (as is the fraction of $J/\psi$ itself);
+and (d) Disappearance of single charm quarks or antiquarks via
+formation of open charm mesons is effectively reversed immediately
+because the time scale for dissociation of these large states 
+with small binding energy is typically less than a fraction of 
+a fermi.The expansion is taken to be isentropic,
+\begin{equation}
+ VT^{3} = {\mathrm constant}
+ \end{equation}
+  
+ which then provides a generic temperature-time profile.
+
+
+It is evident that the solution of Equation \ref{eqkin} grows quadratically
+with initial charm $N_{c\bar{c}}$, as long as the total $J/\psi \ll N_{c\bar{c}}$.  In
+this case we can write an analytic expression
+
+\begin{equation}
+N_{J/\psi}(\tau_f) = \epsilon(\tau_f) \,N_{J/\psi}(\tau_0)
++\epsilon(\tau_f)\,{N_{c\bar{c}}^2}\int_{\tau_0}^{\tau_f}
+{\lambda_{\mathrm{F}} \over V(\tau)\,\epsilon(\tau)} d\tau
+\label{eqbeta}
+\end{equation}
+
+
+
+where $\tau_f$ is the hadronization time determined by the
+initial temperature ($T_0$ )  and
+final temperature ($T_f$ ).
+The function 
+\begin{equation}
+\epsilon(\tau_f) = e^{-\int_{\tau_0}^{\tau_f}{\lambda_{\mathrm{D}}\,\rho_g\,d\tau}} 
+\end{equation}
+Now for a longitudinal isentropic expansion,
+\begin{equation}
+V(\tau)=V_o\,{\tau \over \tau_o}
+=\pi\,R^{2}\tau_0\,{\tau \over \tau_o}
+=\pi\,R^{2}\tau
+\end{equation}
+
+it gives 
+
+\begin{equation}
+N_{J/\psi}(\tau_f) = \epsilon(\tau_f)  N_{J/\psi}(\tau_0) 
+                  + \epsilon(\tau_f) {N_{c\bar{c}}^2 \over \pi R^{2}} \int_{\tau_0}^{\tau_f}
+{  {\lambda_{\mathrm{F}} \over \tau\,\epsilon(\tau)} d\tau}
+\label{eqbeta1}
+\end{equation}
+
+\begin{equation}
+R_{AA} = \epsilon(\tau_f) + \epsilon(\tau_f) {N_{c\bar{c}}^2 \over \pi R^{2}\,N_{J/\psi}(\tau_0)} \int_{\tau_0}^{\tau_f}
+{  {\lambda_{\mathrm{F}} \over \tau\,\epsilon(\tau)} d\tau}
+\label{eqbeta1}
+\end{equation}
+
+
+
+R is the spatial extension of quark gluon plasma. 
+%%% Centrality dependence from Upsilon ratio paper
+
+\begin{equation}\label{rnpart}
+R(N_{\rm part}) = R_0 \, \sqrt{N_{\rm part} \over N_{\rm part0} }.
+\end{equation}
+The initial temperature as a function of centrality is calculated by 
+\begin{equation}\label{InT1}
+T(N_{\rm part})^3 = T_0^3 \, \left({dN/d\eta \over N_{\rm part}/2}\right) / \left({dN/d\eta \over N_{\rm part}/2}\right)_{0-5\%},
+\end{equation}
+
+ where $T_0$ is the initial temperature assumed in 0-5\% centrality and $(dN/d\eta)$
+is the multiplicity as a function of number of participants measured by ALICE experiment \cite{MULT}. 
+Both ALICE and CMS \cite{CMSmult} measurements on multiplicity agree well with each other.
+
+The initial temperature $T_0$ for 0-5\% central collisions for a given initial time $\tau_0$ is obtained by 
+
+\begin{equation}\label{InT2}
+T_{0}^{3}\tau_{0} = \frac{3.6}{4a_{q}\pi R_{0-5\%}^{2}}\left(\frac{dN}{d\eta}\right)_{0-5\%},
+\end{equation}
+
+Here $(dN/d\eta)_{0-5\%}$ = 1.5$\times$1600 obtained from the charge particle multiplicity measured in 
+Pb+Pb collisions at 2.76 TeV \cite{MULT} and $a_{q}$ = 37$\pi^{2}$/90 is the degrees of freedom we take in 
+in quark gluon phase. Using Eq.~(\ref{rnpart}) we can obtain the transverse size of the system
+for 0-5\% centrality as $R_{0-5\%}$ = 0.92$R_0$. 
+ For $\tau_{0}$ = 0.1 fm/$c$, we obtain $T_{0}$ as 0.62 GeV using Eq.~(\ref{InT2}). 
+The critical temperature is taken as $T_{C}$ = 0.160 GeV \cite{QGP_Tc}. 
+
+
+N$_{J/\psi}(\tau_0)$ and N$_{c\bar{c}}$ in Eq.~(\ref{eqbeta1}) will also be a function of 
+centrality. They will scale as number of collision in particular centrality class.
+Number of collisions and number of participants can be calculated from Glauber model 
+calculations.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Dissociation Rate}
+The operator product expansion allows one to express the
+hadron-$J/\psi$ inelastic cross section in terms of the
+convolution of the gluon-$J/\psi$ dissociation cross section
+with the gluon distribution inside the hadron \cite{ks94}.
+The gluon-$J/\psi$ dissociation cross section is given by \cite{ks95}
+\begin{equation}
+  \sigma (q^0)= \frac{2\pi}{3}\left(\frac{32}{3}\right)^2
+  \left(\frac{16\pi}{3g_s^2}\right)\frac{1}{m^2_Q}
+  \frac{(q^0/\epsilon_0-1)^{3/2}}{(q^0/\epsilon_0)^5}\; , \label{eq1}
+\end{equation}
+where $g_s$ is the coupling constant of gluon and $c$ quark, $m_Q$
+the $c$ quark mass, and $q^0$ the gluon energy in the $J/ \psi$ rest
+frame;  its value must be larger than the $J/\psi$ binding energy
+$\epsilon_0$. Since
+for the tightly bound ground state of quarkonium
+the binding force between the heavy quark and antiquark
+is well approximated by the one-gluon-exchange Coulomb potential,
+the $Q\bar{Q}$ bound state is hydrogen-like and the Coulomb relation
+holds,
+\begin{equation}
+\epsilon_0 =\left({3g_s^2 \over 16\pi}\right)^2 m_Q \; . \label{eq2}
+\end{equation}
+The cross section thus can be rewritten as
+\begin{equation}
+  \sigma (q^0)=\frac{2\pi}{3}\left(\frac{32}{3}\right)^2
+  \frac{1}{m_Q(\epsilon_0 m_Q)^{1/2}}
+\frac{(q^0/\epsilon_0-1)^{3/2}}{(q^0/\epsilon_0)^5}\; . \label{eq3}
+\end{equation}
+
+
+As shown in Monte Carlo simulations \cite{KEXW}, the parton
+density in the early stage of high-energy heavy-ion collisions
+has an approximate Bjorken-type \cite{bj83} scaling behavior. We
+will only consider $J/\psi$ suppression in the central rapidity
+region ($y_{J/\psi}\simeq 0$). In this case, the $J/ \psi$ will move
+in the transverse direction with a four-velocity
+\begin{equation}
+u=(M_T, \vec{P_T}, 0)/M_{J/\psi}, \label{eq4}
+\end{equation}
+where $M_T=\sqrt{P_T^2+M^2_{J/ \psi}}$ is defined as the $J/\psi$'s
+transverse mass. A gluon with a four-momentum $k=(k^0,\vec{k})$
+in the rest frame of the parton gas has an energy $q^0=k\cdot u$
+in the rest frame of the $J/\psi$. 
+\begin{eqnarray}
+ q^{0} &= &\frac{k^{0}\,m_{T} + \vec{k} \cdot \vec{p_{T}}}{M_{J/\psi}}
+\end{eqnarray}
+in general q$^{0}$ can be written as
+\begin{eqnarray}
+ q^{0} &= &\frac{s-M_{J/\psi}^{2}}{M_J/\psi}
+\end{eqnarray}
+The thermal gluon-$J/\psi$ dissociation cross section is then defined as
+\begin{eqnarray}
+\langle v_{\rm rel} \sigma (k \cdot u)\rangle_k &= &\frac{\int d^3k v_{\rm rel} \sigma (k \cdot u) f(k^0;T)}{\int d^3k f(k^0;T)} \\
+                                                &= &\frac{\int k^{2} dk dcos\theta d\phi v_{\rm rel} \sigma (k \cdot u) f(k^0;T)}{\int d^3k f(k^0;T)} \\
+ \label{eq5}
+\end{eqnarray}
+
+where the gluon distribution in the rest frame of the
+parton gas is defined as
+
+\begin{equation}
+  f(k^0;T)=\frac{\lambda_g}{e^{k^0/T}-1} \label{eq6}
+\end{equation}
+with $\lambda_g\leq 1$ specifying the deviation of the system from
+chemical equilibrium. The relative velocity $v_{\rm rel}$ between
+the $J/\psi$ and a gluon is
+\begin{eqnarray}
+  v_{\rm rel} &= &\frac{P_{J/\psi}\cdot k}{k^0M_T} \\
+              &= &1-\frac{\vec{k}\cdot\vec{P}_T}{k^0M_T} \\
+              &= &1-\frac{k P_T cos\theta }{k^0M_T} \\
+              \label{eq7}
+\end{eqnarray}
+
+Changing the variable to the gluon momentum, $q=(q^0,\vec{q})$, in
+the rest frame of the $J/\psi$, the integral in the numerator
+of Eq.~(\ref{eq5}) can be rewritten as
+
+\begin{equation}
+  \int d^3q \frac{M_{J/\psi}}{M_T}\sigma(q^0) f(k^0;T), \label{eq8}
+\end{equation}
+
+\begin{equation} 
+=\frac{M_{J/\psi}}{M_T} \int d^3q \sigma(q^0) \frac{\lambda}{e^{\frac{k^0}{T}}-1}, 
+\label{eq11}
+\end{equation}
+
+where
+
+\begin{equation}
+  k^0=(q^0M_T+\vec{q}\cdot\vec{P}_T)/M_{J/\psi} \; . \label{eq9}
+\end{equation}
+
+putting the value of k$^{0}$ and solving
+
+\begin{eqnarray} 
+&= &\frac{M_{J/\psi}}{M_T} \int d^3q \sigma(q^0) \frac{\lambda_{g}} {  e^{ \frac{q^0m_{T}}{M_{J/\psi}T}} e^{ \frac{ \vec{q}\cdot \vec{p_{T} } }{ M_{J/\psi}T }  } -1}  \\
+&= &\lambda_{g} \frac{M_{J/\psi}}{M_T} \int d^3q \sigma(q^0)   \sum_{n=1}^{\infty}  e^{ \frac{-n\,q^0m_{T}}{M_{J/\psi}T}} e^{  \frac{-n\,\vec{q}\cdot \vec{p_{T}}}{M_{J/\psi}T}}\\
+&= &\lambda_{g} \frac{M_{J/\psi}}{M_T} \int\,q^2\,dq\,d(cos\theta)\,d\phi\,\sigma(q^0) \sum_{n=1}^{\infty}  e^{ \frac{-n\,q^0m_{T}}{M_{J/\psi}T}} e^{  \frac{-n\,\vec{q}\cdot \vec{p_{T}}}{M_{J/\psi}T}}\\
+&= &\lambda_{g} \frac{M_{J/\psi}}{M_T}  \sum_{n=1}^{\infty} 2\pi  \int q^2 dq \, \sigma(q^0)\,e^{ \frac{-n\,q^0m_{T}}{M_{J/\psi}T}}  \int_{1}^{-1} e^{  \frac{-n\,q\,p_{T} cos\theta}{M_{J/\psi}T}} d(cos\theta)\\
+&= &\lambda_{g} \frac{M_{J/\psi}}{M_T} \sum_{n=1}^{\infty} 2\pi  \int q^2 dq \, \sigma(q^0)\,e^{ \frac{-n\,q^0 m_{T}}{M_{J/\psi}T}} 
+    [e^{-\frac{nq p_T}{M_{J/\psi}T}} - e^{\frac{nq P_T}{M_{J/\psi}T}}]\,\frac{M_{J/\psi}T}{nq p_T}\\
+&= &\lambda_{g} \frac{M_{J/\psi}^2}{M_T} 2\pi \sum_{n=1}^{\infty} \frac{T}{n} \int_{\epsilon_0}^{\infty} q dq \, \sigma(q^0) \frac{1}{p_T} \,e^{ \frac{-n\,q^0 m_{T}}{M_{J/\psi}T}} 
+    [e^{\frac{n q p_T}{M_{J/\psi}T}} - e^{- \frac{n q P_T}{M_{J/\psi}T}}]\\
+\end{eqnarray}
+
+$\sigma(q^0)$ can be written as
+
+\begin{equation}
+\sigma(q^{0}) = 4\pi\,(\frac{8}{3})^3\,\frac{1}{m_Q^{3/2}}\,\epsilon_0^3 \frac{ (q^0-\epsilon_0)^{3/2}}{(q^0)^5}
+\end{equation}
+
+
+
+One can carry out the integral in the denominator,
+$\int d^3k f(k^0;T)=8\pi \zeta(3)\lambda_g T^3$, and the angular
+part in the numerator, to get
+
+
+\begin{equation}
+  \langle v_{\rm rel}\sigma(k\cdot u)\rangle_k=
+(\frac{8}{3})^3\frac{\pi}{\zeta(3)}\frac{M_{J/\psi}^2}{P_TM_T T^3}
+(\frac{\epsilon_0}{m_Q})^{3/2}\sum_{n=1}^{\infty}T_n
+\int_1^{\infty} dx\frac{(x-1)^{3/2}}{x^4}(e^{-a_n^-x}-e^{-a_n^+x})\; ,
+\label{eq10}
+\end{equation}
+
+
+with $T_n=T/n$ and
+\begin{equation}
+  a_n^{\pm}=\frac{\epsilon_0}{T_n}\frac{M_T\pm P_T}{M_{J/\psi}}
+  \; . \label{eq11}
+\end{equation}
+
+
+In order to understand the temperature and $P_T$ dependence of the
+thermal gluon-$J/\psi$ dissociation cross section,
+we first plot in Fig.~1 the cross section $\sigma(q^0)$ of
+Eq.~(\ref{eq3}) as a function of the gluon energy in the $J/\psi$' rest frame.
+It decreases strongly toward the threshold and is broadly
+peaked around $q^0=10\epsilon_0/7=0.92$ GeV, with a maximum value
+of about 3 mb. Low-momentum gluons have neither the resolution to
+distinguish the heavy constituent quarks nor the energy to
+excite them to the continuum. On the other end, high-momentum
+gluons also have small cross section with a $J/\psi$ since they
+cannot see the large size.
+
+
+We can also express the cross section as a function of the
+center-of-mass energy of gluons and the $J/\psi$,
+$\sigma(q^0)=\sigma(s/2M_{J/\psi}-M_{J/\psi}/2)$, where
+$s=(k+P_{J/\psi})^2$. One can thus translate the energy
+dependence in Fig.~1 into temperature and $P_T$ dependences
+after thermal average, since the thermally averaged $<s>$
+is proportional to both $P_T$ and temperature $T$.
+In Fig.~2 we plot the thermally averaged gluon-$J/\psi$ dissociation
+cross section as a function of temperature for
+different values of the $J/\psi$'s transverse momentum $P_T$.
+We observe the same kind of peak structure, with a decreased
+maximum value due to the thermal average. The position of the
+peak also shifts to smaller values of $T$ when $P_T$ is
+increased, corresponding to a fixed value of the averaged
+center-of-mass energy $\langle s\rangle$. A similar behavior is
+expected if one plots the thermal
+cross section as a function of $P_T$ at different temperatures, as done
+in Fig.~3. However, in this case, the peak simply disappears
+at high enough temperatures, because the averaged $\langle s\rangle$
+will be above the threshold value even for $P_T=0$.
+These features will have considerable consequences for
+the survival probability of a $J/\psi$ in an equilibrating
+parton gas, especially the $P_T$ dependence.
+We should also mention that the use of the Bose-Einstein
+distribution function has an effect of about 20\% on the
+thermal cross section, compared to that
+obtained with a Boltzmann distribution \cite{ks95}.
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Formation Rate}
+We can calculate Formation rate from Dissociation rate using detailed balance relation
+
+\begin{equation}
+ \sigma_{F} = \frac{48}{30}\,\sigma_{D}\frac{(s-M_{J/\psi})^{2}}{s(s-4m_{c}^{2})}
+\end{equation}
+
+or Formation rate can be written as 
+
+\begin{equation}
+\lambda_{F} = <\sigma_{F} \,\, v_{\rm relative}>
+\end{equation}
+
+v$_{\rm relative}$ is relative velocity between c $\bar{c}$ quark pair and can be defined as
+
+\begin{equation}
+v_{\rm relative} = {((p_{1}.p_{2})^{2} - m^{4} )^{1/2} \over E_{1}.E_{2}}
+\end{equation}
+
+\begin{equation}
+=\frac{\sqrt{s(s-4m_{Q}^{2})}}{2E_1E_2} 
+\end{equation}
+
+%$m$ is reduced mass of system. 
+%\begin{equation}
+%m = { m_Q \,m_{\bar Q} \over m_Q + m_{\bar Q}} 
+%={m_{Q}\over 2}
+%\end{equation}
+where 
+\begin{eqnarray}
+ s &= &(E_1+E_2)^{2} - (\vec{p_1}+\vec{p_2})^2 \\
+   &= & m_1^{2} + m_2^{2} + 2 E_1E_2 - 2 |\vec{p_1}||\vec{p_2}|cos\theta \\
+\end{eqnarray}
+
+
+where $\vec{p_{1}}$ and $\vec{p_{2}}$ are three momentum of quarks. 
+
+\begin{eqnarray}
+\vec{p} &= &(p_x, p_y, p_z) \\
+            &=&(p sin\theta cos \phi, p sin\theta sin \phi, p cos\theta)\\
+\vec{p_1}.\vec{p_2} &= &|\vec{p_1}||\vec{p_2}|sin \theta_1 sin \theta_2 cos(\phi_1 - \phi_2) + cos \theta_1 cos\theta_2\\	
+\end{eqnarray}
+
+
+%We can write expression of v$_{relative}$ in
+%\begin{equation}
+%v_{\rm relative} = { [ p_1^{2} p_2^{2} ( sin\theta_1 sin\theta_2 cos (\phi_1 - \phi_2)  + cos\theta_1 cos \theta_2
+% )^{2} - m^{4} ] ^{1/2} \over E_{1}E_{2}}
+%\end{equation}
+
+Total expression for formation rate can be written as
+
+\begin{eqnarray}
+\lambda_{F} &= &\frac{\int \sigma_{F}(s)\, v_{\rm relative}\,f_{c}(p_1)\, f_{\bar{c}} (p_2) \,d^{3}p_1 \,d^{3}p_2} {\int \,f_{c}(p_1)\,d^{3}p_1 \int f_{\bar{c}} (p_2)\,d^{3}p_2}\\
+            &= &\frac{\int \sigma_{F}(s)\, v_{\rm relative}\,f_{c}(p_1)\, f_{\bar{c}} (p_2) 4\pi p_1^{2} dp_1 2\pi p_2^{2} dp_2 d(cos \theta)}
+            {4\pi \int p_1^{2} dp_1 \,f_{c}(p_1) 4 \pi \int p_2^{2} dp_2 \, f_{\bar{c}} (p_2)}\\
+\end{eqnarray}
+
+here $\sigma_{F}$ is cross section of c$\bar{c}$ pair going to J/$\psi$ particle.
+which is defined as
+ \begin{equation}
+\sigma_{F} ={ \theta(q^{2})\,\theta(4m_{D}^{2}-4m_{c}^{2}-q^{2})\,\sigma(J/\psi) \over N_{c\bar{c}} }
+\end{equation}
+
+here $\theta$(x) is Heaviside Step Function. We take $\sigma_{pp}$ = 7 fm$^{2}$ and
+m$_D$ = 1.868 GeV.
+
+and $f_{c}(p)$ and $f_{\bar{c}}(p)$ are parton distribution function of c and $\bar{c}$ respectively.
+
+\begin{equation}
+f_{c}(p)={g_c(=6)  \over 1+exp [ { (p^{2} + m^{2} )^{1/2}  \over T }] }
+\end{equation}
+
+
+and 
+\begin{equation}
+d^{3}p=p^{2} dp \, d(cos\theta)\,d\phi
+=p^{2}dp\,sin\theta d\theta\,d\phi
+\end{equation}
+
+
+so we get a six dimensional integral which can be solved using Monte Carlo  methods. 
+
+
+
+
+\section{Summary}
+  The Table (I) summarizes all the above numbers. In conclusion at LHC all most all of the 
+quarkonium prduced in the collisions will be suppressed. Since the number of initially 
+produced charm pairs is very large it will give a large number of J/$\psi$ at hadronization.
+The results from different models differ substantially. The 
+transverse momentum distributions of these secondary  J/$\psi$ difffer from those 
+initially produced. This aspect is being studied in detail. 
+
+
+\noindent
+\begin{thebibliography}{100}
+\medskip
+\bibitem{INTRO} I. Arsene {\it et al.} [BRAHMS Collaboration], Nucl. Phys. A {\bf 757}, 1 (2005); 
+  B.B. Back {\it et al.} [PHOBOS Collaboration], Nucl. Phys. A {\bf 757} 28.(2005); 
+  J. Adams {\it et al.} [STAR Collaboration], Nucl. Phys. A {\bf 757}, 10.(2005); 
+  K. Adcox {\it et al.} [PHENIX Collaboration], Nucl. Phys. A {\bf 757} 184 (2005).
+\bibitem{QGP_Tc} B. Muller, J. Schukraft and B. Wyslouch, Ann. Rev. Nucl. Part. Sci., arXiv:1202.3233 [hep-ex].
+\bibitem{SATZ} T. Matsui and H. Satz, Phys. Lett. B{\bf 178}, 416 (1986).
+\bibitem{ATLAS} G. Aad {\it et al.} [ATLAS Collaboration], Phys. Lett. B{\bf 697},294 (2011); arXiv:1012.5419.
+
+\bibitem{JCMS} S. Chatrchyan {\it et al.} [CMS Collaboration]
+ J. High Energy Phys. {\bf 1205}, 63 (2012);  arXiv: 1201.5069 [nucl-ex]..
+\bibitem{CMSU2} CMS Collaboration, CERN-PH-EP-2012-228, arXiv:1208.2826.
+\bibitem{UCMS} S. Chatrchyan {\it et al.} [CMS Collaboration] Phys. Rev. Lett. {\bf 107}, 052302 (2011).
+
+\bibitem{YSuppAbdShuk} A. Abdulasalam, Prashant Shukla arXiv:1210.7584.
+
+%Quarkonia
+\bibitem{Vogt} R. Vogt, Phys. Rev. C{\bf 81}, 044903 (2010); arXiv:1003.3497.
+\bibitem{Rapp1} X. Zhao and R. Rapp, Nucl. Phys. A{\bf 859}, 114 (2011); arXiv:1102.2194. 
+\bibitem{Rapp2} X. Zhao and R. Rapp, Phys. Rev. C{\bf 82}, 064905 (2010); arXiv:1008.5328.
+
+\bibitem{UPsi_Blaiz} J.P. Blaizot and J.Y. Ollitrault, Phys. Lett. B{\bf 199}, 499 (1987).
+\bibitem{UPsi_Guni} J.F. Gunion and R. Vogt, Nucl. Phys. B{\bf 492}, 301 (1997).
+\bibitem{CHU} M.C. Chu and T. Matsui, Phys. Rev. D{\bf 37}, 1851 (1988).
+
+
+\bibitem{GAVIN} S. Gavin, P. L. McGaughey, P. V. Ruuskanen, and R. Vogt,
+               Phys. Rev. C {\bf 54}, 2606 (1996).
+               
+\bibitem{LIN} Z. Lin, R. Vogt and X. N. Wang, Phys. Rev. C {\bf 57}, 899 (1998).
+\bibitem{CTEQ6} J.~Pumplin, D.~R.~Stump, J.~Huston, H.~L.~Lai, P.~M.~Nadolsky 
+and W.~K.~Tung,
+  JHEP {\bf 0207}, 012 (2002)
+  [arXiv:hep-ph/0201195];
+  D.~Stump, J.~Huston, J.~Pumplin, W.~K.~Tung, H.~L.~Lai, S.~Kuhlmann 
+  and J.~F.~Owens,
+  JHEP {\bf 0310}, 046 (2003) 
+  [arXiv:hep-ph/0303013].
+\bibitem{EPS09} K. J. Eskola, H. Paukkunen and C. A. Salgado, JHEP
+{\bf 0904}, 065 (2009) [arXiv:0902.4154 [hep-ph]].
+
+\bibitem{CNV} M. Cacciari, P. Nason and R. Vogt, Phys. Rev. Lett.
+{\bf 95}, 122001 (2005).
+
+\bibitem{ContinuumVKShuk} V. Kumar, P. Shukla, R. Vogt arXiv:1205.3860.
+
+\bibitem{MNR} M. L. Mangano, P. Nason, and G. Ridolfi, Nucl. Phys. B 
+{\bf 373}, 295 (1992).
+
+
+\bibitem{NVF} R. Nelson, R. Vogt and A. D. Frawley, submitted to Phys. Rev. C;
+R. Vogt, R. E. Nelson and A. D. Frawley, arXiv:1207.6812 [hep-ph].
+\bibitem{RVjoszo} R. Vogt, Eur. Phys. J.
+Special Topics {\bf 155}, 213 (2008).
+\bibitem{RVHP08} R. Vogt, Eur.\ Phys.\ J.\ C {\bf 61}, 793 (2009).
+
+
+\bibitem{PbPbTotal} S. Chatrchyan {\it et. al.} (CMS Collaboration), 
+Phys. Rev. C {\bf 84}, 024906 (2011).
+
+\bibitem{MULT} K. Aamodt {\it et al.} [ALICE collaboration], Phys. Rev. Lett. {\bf 106}, 032301 (2011);
+          arXiv:1012.1657 [nucl-ex].
+
+\bibitem{CMSmult} S. Chatrchyan {\it et al.} [CMS Collaboration], J. High Energy Phys. {\bf 1108}, 141 (2011);
+       arXiv:1107.4800.  
+
+\bibitem{ks94}D.~Kharzeev and H.~Satz, Phys. Lett. {\bf B334}, 155(1994)
+
+\bibitem{ks95}D.~Kharzeev and H.~Satz, CERN-TH/95-117, BI-TP 95/20,
+         {\it Quark-Gluon Plasma II}, R. C. Hwa (Ed.) (World Scientific, Singapore)
+
+\bibitem{KEXW}K.~J.~Eskola and X.-N.~Wang, Phys. Rev. D {\bf 49}, 1284(1994).
+
+
+\bibitem{THEWS} R. L. Thews and J. Rafalski, Nuclear Physics A698, 575 (2002) [arXiv: hep-ph/0104025];
+               R. L. Thews, arXiv: hep-ph/0206179.
+\bibitem{MUNZI} P. Braun-Munzinger and J. Stachel, Physics Letters B490, 196 (2000).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibitem{NA50} M. C. Abreu {\it et al.} [NA50 collaboration], Nucl. Phys. A698, 127 (2002).
+
+%\bibitem{yellow_report_qqb} CERN Yellow Report. Hard probes in heavy ion 
+ %collisions at the LHC: Heavy flavor physics, CERN-2004-009-C; 
+ %arXiv:hep-ph/0311048.
+
+%\bibitem{DAIN} N. Carrer and A Dainese, arXiv:hep-ph/0311225.
+
+%\bibitem{KHAR} D. Kharjeev, C. Lourenco, M. Nardi and H. Satz, Z. Phys. C 74, 307 (1997);
+%[arXiv:hep-ph/9612217]. 
+
+
+%\bibitem{BHAN} G. Bhanot and M.E. Peskin, Nucl. Phys B156, 391 (1979).
+
+%\bibitem{MUNZI} P. Braun-Munzinger and J. Stachel, Physics Letters B490, 196 (2000).
+
+%\bibitem{THEWS} R. L. Thews and J. Rafalski, Nuclear Physics A698, 575 (2002) [arXiv: hep-ph/0104025];
+%               R. L. Thews, arXiv: hep-ph/0206179. 
+
+
+
+%\bibitem{letessier} Rafelski, J., Letessier, J., and Tounsi, A., \emph{Heavy Ion Phys.}
+%   181-192 (1996).
+
+\end{thebibliography}
+
+\end{document}
+%
+% ****** End of file snpcontrisamp.tex ******
