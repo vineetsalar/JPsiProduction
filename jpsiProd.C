@@ -157,7 +157,6 @@ Double_t ep02=ep0*ep0;
 Double_t epCon = 4.0*pi*pow(8./3.0, 3)*pow(ep0, 3)/pow(mQ, 1.5);
 Double_t redMass = mQ/2.0;
 
-
 //const Double_t nCC0 = (0.5*1658)/362.0;
 //const Double_t nJpsi0 = (0.01*1658)/362.0; 
 
@@ -167,7 +166,6 @@ const Double_t nCC0_21 = (nCC0_21_All*Fugicity*1658)/362.0;
 const Double_t nJpsi0_21 = (0.00123*1658)/362.0; 
 const Double_t JPsiIntSh_21 = 1.0/0.8880; // on 20.04.2015
 const Double_t JPsiIntSh_1 = 1.0/0.856; 
-
 
 //Double_t a0 = 0.185;
 //Double_t epConMod = 16.0*(16.0*16.0*16.0*pi*a0*a0*a0*ep0)/(6.0*3.0*3.0);
@@ -183,9 +181,8 @@ int QQbarVar=4;
 */
 
 
-
 //Parameters Y(2S)
-Int_t isUps=1;
+Int_t isUps=2;
 Double_t mJpsi = 10.02;
 Double_t mD = 5.280;
 Double_t mQ = 4.2;
@@ -204,7 +201,6 @@ const Double_t nCC0_21 = (nCC0_21_All*Fugicity*1658)/362.0;
 const Double_t nJpsi0_21 = (0.00123*1658)/362.0; 
 const Double_t JPsiIntSh_21 = 1.0/0.8880; // on 20.04.2015
 const Double_t JPsiIntSh_1 = 1.0/0.856; 
-
 
 
 //Double_t a0 = 0.915;
@@ -269,8 +265,8 @@ const Double_t R05 = 0.96*RPb;
 //==========================================//
 
 //Double_t Fac = 0.5;
-Double_t Fac = 1.0;
-//Double_t Fac = 1.5;
+//Double_t Fac = 1.0;
+Double_t Fac = 1.5;
 
 //const Double_t tau0 = 0.1;
 const Double_t tau0 = 0.3; //nominal
@@ -369,7 +365,6 @@ Double_t Tau0ToTauC(Int_t Flag, Double_t T0Cent, Double_t R0Cent);
 Double_t TauCToTauh(Int_t Flag, Double_t TauC, Double_t R0Cent);
 Double_t TauhToTauf(Int_t Flag, Double_t Tauh, Double_t R0Cent);
 
-
 Double_t Shadowing(Double_t SigmaAbs, Double_t NPart);
 
 Double_t CNMVsNPart(Double_t NPart,TGraph *Shgrf);
@@ -397,7 +392,11 @@ void Draw_ALICEMid_JPsi_RaaVsNpart(TLegend *lgd);
 void Draw_CMS_Y1S_RaaVsNpart(TLegend *lgd);
 void Draw_CMS_Y2S_RaaVsNpart(TLegend *lgd);
 void Draw_ALICEFor_Y1S_RaaVsNpart(TLegend *lgd);
+
 void Draw_CMS_Y1S_RaaVspT(TLegend *lgd);
+void Draw_CMS_Y2S_RaaVspT(TLegend *lgd);
+void Draw_CMS_Y1S_RaaVsRap(TLegend *lgd);
+void Draw_CMS_Y2S_RaaVsRap(TLegend *lgd);
 
 void Draw_AllDataGraphs();
 
@@ -442,7 +441,8 @@ TH1D *HistJpsiRaaShVsPt_Y1 = (TH1D*)fileShadowing->Get("HistJpsiRaaShVsPt_Y1");
 TH1D *HistJpsiRaaShVsPt_Y2440 = (TH1D*)fileShadowing->Get("HistJpsiRaaShVsPt_Y2440");
 TH1D *HistJpsiRaaShVsPt_Y21 = (TH1D*)fileShadowing->Get("HistJpsiRaaShVsPt_Y21");
 
-//TH1D *HistUpsilonRaaShVsPt_Y21 = (TH1D*)fileShadowing->Get("HistUpsilonRaaShVsPt_Y21");
+TH1D *HistUpsilonRaaShVsPt_Y21 = (TH1D*)fileShadowing->Get("HistUpsilonRaaShVsPt_Y21");
+
 //TH1D *HistUpsilonRaaShVsPt_Y2440 = (TH1D*)fileShadowing->Get("HistUpsilonRaaShVsPt_Y2440");
 
 
@@ -536,7 +536,7 @@ void jpsiProd()
   
   cout<<" T0 "<<T0<<"  aq "<<aq<<" ah "<<ah<<endl;
   
-  return;
+  //Draw_AllDataGraphs();
 
   Char_t OutFileName[100];
   
@@ -544,8 +544,10 @@ void jpsiProd()
   if(QQbarVar==2){sprintf(OutFileName,"PsiCalculations.root");}
   if(QQbarVar==3){sprintf(OutFileName,"ChiCCalculations.root");}
 
-  if(QQbarVar==4){sprintf(OutFileName,"Y1SCalculations.root");}
-  if(QQbarVar==5){sprintf(OutFileName,"Y2SCalculations.root");}
+  //if(QQbarVar==4){sprintf(OutFileName,"Y1SCalculations.root");}
+  if(QQbarVar==4){sprintf(OutFileName,"Y1SCalculations_PtTest.root");}
+  // if(QQbarVar==5){sprintf(OutFileName,"Y2SCalculations.root");}
+  if(QQbarVar==5){sprintf(OutFileName,"Y2SCalculations_PtTest.root");}
   if(QQbarVar==6){sprintf(OutFileName,"Y3SCalculations.root");}
   if(QQbarVar==7){sprintf(OutFileName,"ChiBCalculations.root");}
 
@@ -1713,6 +1715,8 @@ void jpsiProd()
 
     PionDissALICEPt[i]=PionDiss_All(PtALICE[i]);
     GluonDissALICEPt[i]=IntDiss_All(PtALICE[i]);
+    
+
     ShadowDissALICEPt[i]=HistJpsiRaaShVsPt_Y1->Interpolate(PtALICE[i]);
     
     NJPsiRegenALICEPt[i]=GluonDissALICEPt[i]*NCCMB*NCCMB*IntFormVsPt(PtALICE[i],R0MB);
@@ -1815,7 +1819,10 @@ void jpsiProd()
   gPad->SaveAs("Fig5a_ALICE_RAAPt.png");
   
 
+  
   int NNPtCMS = 59;
+  if(QQbarVar ==4 || QQbarVar ==5){NNPtCMS = 40;}
+
   Double_t RAACMSPt[100];
   Double_t PionDissCMSPt[100];
   Double_t ShadowDissCMSPt[100];
@@ -1831,6 +1838,8 @@ void jpsiProd()
   		       16.75,17.25,17.75,18.25,18.75,19.25,19.75,20.25,20.75,21.25,21.75,22.25,22.75,23.25,23.75,
   		       24.25,24.75,25.25,25.75,26.25,26.75,27.25,27.75,28.25,28.75,29.25,29.75,30.25,30.75};
     
+
+
   cout<<" Calculating CMS RAA Vs Pt "<<endl;
   cout<<"pT  "<<" shadow "<<"   "<< " gluon "<<"   "<< " Pion "<< "   "<< " Diss  "<< "   "<<" For "<< "  "<< " RAA " <<endl;  
   
@@ -1839,8 +1848,10 @@ void jpsiProd()
     PionDissCMSPt[i]=PionDiss_All(PtCMS[i]);
     GluonDissCMSPt[i]=IntDiss_All(PtCMS[i]);
 
-    ShadowDissCMSPt[i]=HistJpsiRaaShVsPt_Y21->Interpolate(PtCMS[i]);
-   
+    if(isUps==0 && (QQbarVar ==1 || QQbarVar ==2) ){ShadowDissCMSPt[i]=HistJpsiRaaShVsPt_Y21->Interpolate(PtCMS[i]);}
+    if(isUps==1 && QQbarVar ==4){ShadowDissCMSPt[i]=HistUpsilonRaaShVsPt_Y21->Interpolate(PtCMS[i]);}
+    if(isUps==2 && QQbarVar ==5){ShadowDissCMSPt[i]=HistUpsilonRaaShVsPt_Y21->Interpolate(PtCMS[i]);}
+
     NJPsiRegenCMSPt[i]=GluonDissCMSPt[i]*NCCMB*NCCMB*IntFormVsPt(PtCMS[i],R0MB);
     
     NJPsi0CMSPt[i]= Jpsi_Pt->GetBinContent(Jpsi_Pt->FindBin(PtCMS[i]))/Jpsi_Pt->GetBinWidth(0);
@@ -1927,8 +1938,9 @@ void jpsiProd()
    
   new TCanvas;
   gPad->SetTicks();
-  if(isUps==0){Draw_CMS_JPsi_RaaVspT(leg_CMSJPsiRaaPt);} 
-  if(isUps==1){Draw_CMS_Y1S_RaaVspT(leg_CMSJPsiRaaPt);}
+  if(isUps==0 && (QQbarVar ==1 || QQbarVar ==2) ){Draw_CMS_JPsi_RaaVspT(leg_CMSJPsiRaaPt);} 
+  if(isUps==1 && QQbarVar ==4){Draw_CMS_Y1S_RaaVspT(leg_CMSJPsiRaaPt);}
+  if(isUps==2 && QQbarVar ==5){Draw_CMS_Y2S_RaaVspT(leg_CMSJPsiRaaPt);}
 
   leg_CMSJPsiRaaPt->AddEntry(grGluonDissCMSPt_M,"Gluon Dissociation","L");
   leg_CMSJPsiRaaPt->AddEntry(grPionDissCMSPt_M,"Comover","L");
@@ -1958,31 +1970,30 @@ void jpsiProd()
   grRegenCMSPt_M->Write();
   grShadowDissCMSPt_M->Write();
 
-  //OutFile->Write();
-  //OutFile->Close();
-
+  
   //return;
 
   //==============================================================================================//
   //================================= RAA Vs Rapidity Calculations ==============================//
   //=============================================================================================//
   
-  int NNRapCMS = 3;
-  Double_t RAACMSRap[3];
-  Double_t PionDissCMSRap[3];
-  Double_t GluonDissCMSRap[3];
+  int NNRapCMS = 10;
+  Double_t RAACMSRap[10];
+  Double_t PionDissCMSRap[10];
+  Double_t GluonDissCMSRap[10];
 
   //AvPt in Rap bins
   //  Double_t AvPtCMS[3]={10.92,9.65,8.92};
-  
-  Double_t RapCMS[3]={0.6,1.4,2.0};
-  
-  Double_t GluonDissRap = IntDiss_PtInt(6.25,Npart(0,40));
-  Double_t PionDissRap =  PionDiss_PtInt(6.25);
+  //Double_t RapCMS[3]={0.6,1.4,2.0};
 
-    for(int i=0; i<NNRapCMS; i++) {
-      //GluonDissCMSRap[i]=IntDiss_All(AvPtCMS[i]);
-      //PionDissCMSRap[i]=PionDiss_All(AvPtCMS[i]);;
+  Double_t RapCMS[10]={0.2,0.4,0.6,0.8,1.0,1.2,1.4,1.6,1.8,2.0};
+  
+  Double_t GluonDissRap = IntDiss_PtInt(0.25,Npart(0,40));
+  Double_t PionDissRap =  PionDiss_PtInt(0.25);
+  
+  for(int i=0; i<NNRapCMS; i++) {
+    //GluonDissCMSRap[i]=IntDiss_All(AvPtCMS[i]);
+    //PionDissCMSRap[i]=PionDiss_All(AvPtCMS[i]);;
       GluonDissCMSRap[i]= GluonDissRap;
       PionDissCMSRap[i]=PionDissRap;
       RAACMSRap[i]=GluonDissCMSRap[i]*PionDissCMSRap[i];
@@ -2028,12 +2039,14 @@ void jpsiProd()
     leg_CMSJPsiRaaRap->SetFillColor(0);
     leg_CMSJPsiRaaRap->SetTextSize(0.040);
   
-  
-  
-    
+        
     new TCanvas;
     gPad->SetTicks();
-    Draw_CMS_JPsi_RaaVsRap(leg_CMSJPsiRaaRap);
+
+    if(isUps==0 && (QQbarVar ==1 || QQbarVar ==2))Draw_CMS_JPsi_RaaVsRap(leg_CMSJPsiRaaRap);
+    if(isUps==1 && QQbarVar ==4){Draw_CMS_Y1S_RaaVsRap(leg_CMSJPsiRaaPt);}
+    if(isUps==2 && QQbarVar ==5){Draw_CMS_Y2S_RaaVsRap(leg_CMSJPsiRaaPt);}
+
     leg_CMSJPsiRaaRap->AddEntry(grGluonDissCMSRap_M,"gluon Diss.","L");
     leg_CMSJPsiRaaRap->AddEntry(grPionDissCMSRap_M,"#pi Diss.","L");
     leg_CMSJPsiRaaRap->AddEntry(grRAACMSRap_M,"R_{AA}","L");
@@ -2045,8 +2058,16 @@ void jpsiProd()
     gPad->SaveAs("CMS_RAARap.png");
 
   
+    grRAACMSRap_M->Write();
+    grPionDissCMSRap_M->Write();
+    grGluonDissCMSRap_M->Write();
 
-    // return;
+    OutFile->Write();
+    OutFile->Close();
+
+
+
+    return; // when you remove this return please remove OutFile statements also.
 
 
 
@@ -2119,11 +2140,15 @@ void jpsiProd()
 	  HistRegenJpsiPt[j]->Reset();
 	}
       
+      
       if(isUps ==0){
 	for(int j=0;j<=NTau;j++){
 	  FormRateMC_P_New(TempTau[j],j);  
 	}
+      	cout<<" Calculated the Formation part : "<<endl;
       }
+      
+      
 
       //====================================================================================//
       //====================   CMS ========================================================//
@@ -2131,22 +2156,25 @@ void jpsiProd()
       //Jpsi Pt integrated 
       Double_t intPiondissCMS = 0.0;
       if(isUps==0){intPiondissCMS = PionDiss_PtInt(6.25);}
+      
       if(isUps==1){intPiondissCMS = PionDiss_PtInt(0.25);}
       if(isUps==2){intPiondissCMS = PionDiss_PtInt(0.25);}
       PionDissCMS[i]=intPiondissCMS;
      
-      
+      cout<<" calculated Pion Diss: "<<PionDissCMS[i]<<endl;
+
       Double_t intCNMEffectCMS = 0.0;
       //if(isUps==0){intCNMEffectCMS =CNMVsNPart(6.25, nPart[i]);}
       //if(isUps==1){intCNMEffectCMS = CNMVsNPart(0.25,nPart[i]);}
       //if(isUps==2){intCNMEffectCMS = CNMVsNPart(0.25,nPart[i]);}
       
 
-      if(isUps==0){intCNMEffectCMS =CNMVsNPart(nPart[i],grShJPsiPtCutVsNPart_Y21);}
+      if(isUps==0){intCNMEffectCMS = CNMVsNPart(nPart[i],grShJPsiPtCutVsNPart_Y21);}
       if(isUps==1){intCNMEffectCMS = CNMVsNPart(nPart[i],grShUpsilonVsNPartMid);}
       if(isUps==2){intCNMEffectCMS = CNMVsNPart(nPart[i],grShUpsilonVsNPartMid);}
       CNMEffectsCMS[i]=intCNMEffectCMS;
       
+      cout<<" calculated Shadowing: "<< CNMEffectsCMS[i] <<endl;
 
       Double_t intdissCMS = 0.0;
       if(isUps==0){intdissCMS = IntDiss_PtInt(6.25,nPart[i]);}
@@ -2154,11 +2182,16 @@ void jpsiProd()
       if(isUps==2){intdissCMS =IntDiss_PtInt(0.25,nPart[i]);}
       jpsiDissCMS[i] = intdissCMS;
       
+      cout<<" calculated Gluon Dissociation: "<<  jpsiDissCMS[i] <<endl;
+
       Double_t intformCMS=0.0;
       jpsiFormCMS[i] = intdissCMS*intformCMS*nCC*nCC/(nJpsi);
       nJpsiFCMS[i] = (jpsiDissCMS[i] + jpsiFormCMS[i] );
       RAACMS[i] = nJpsiFCMS[i];
       
+
+      cout<<" calculated Formation: "<<  jpsiFormCMS[i] <<endl;
+
       cout<<"RAA CMS "<<endl;
       cout <<"nPart "<<nPart[i]<<" pion   "<<PionDissCMS[i]<<" cnm  "<<CNMEffectsCMS[i]<<" raa  "<<RAACMS[i]<<" gluon "<<RAACMS[i]/(PionDissCMS[i]*CNMEffectsCMS[i])<<endl;
 
@@ -2472,10 +2505,7 @@ void jpsiProd()
   grRegenCMSPt_M->Write();
   */
   
-  grRAACMSRap_M->Write();
-  grPionDissCMSRap_M->Write();
-  grGluonDissCMSRap_M->Write();
-
+ 
   grCNMCMS_M->Write();
   grPionDissCMS_M->Write();
   grFormCMS_M->Write();
@@ -3320,6 +3350,7 @@ Double_t IntDiss_PtInt(Double_t PtMin, Double_t NPart)
     Double_t Pt=PtMin+i*Ptstep;
 
     if(isUps==0){yield=Jpsi_Pt->GetBinContent(Jpsi_Pt->FindBin(Pt));}
+    
     if(isUps==1){yield=Y1S_Pt->GetBinContent(Y1S_Pt->FindBin(Pt));}
     if(isUps==2){yield=Y2S_Pt->GetBinContent(Y2S_Pt->FindBin(Pt));}
     
@@ -4789,25 +4820,36 @@ void Draw_AllDataGraphs()
   legend_ratio->SetTextSize(0.04);
 
 
-  
-
-
-
-  new TCanvas;
-  gPad->SetTickx();
-  gPad->SetTicky();
-  Draw_CMS_Y1S_RaaVsNpart(legend_ratio);  
-  legend_ratio->Draw("same");
-
-
-
-  /*
   new TCanvas;
   gPad->SetTickx();
   gPad->SetTicky();
   Draw_CMS_Y1S_RaaVspT(legend_ratio);
   legend_ratio->Draw("same");
-  */
+
+
+
+  new TCanvas;
+  gPad->SetTickx();
+  gPad->SetTicky();
+  Draw_CMS_Y2S_RaaVspT(legend_ratio);
+  legend_ratio->Draw("same");
+
+
+
+
+  new TCanvas;
+  gPad->SetTickx();
+  gPad->SetTicky();
+  Draw_CMS_Y1S_RaaVsRap(legend_ratio);
+  legend_ratio->Draw("same");
+
+
+
+  new TCanvas;
+  gPad->SetTickx();
+  gPad->SetTicky();
+  Draw_CMS_Y2S_RaaVsRap(legend_ratio);
+  legend_ratio->Draw("same");
 
   return;
 
@@ -4869,22 +4911,32 @@ void Draw_AllDataGraphs()
 
 
 
+
 void Draw_CMS_Y1S_RaaVspT(TLegend *lgd)
 {
 
+  //================= CMS Y(1S) Pt published ===================================//
+  //int nbinsPtCMS=3;
+  //Double_t PtCMS[3]={3.03,8.04,13.17};
+  //Double_t ErrPtCMS[3]={0};
+  //Double_t RaaPtCMS[3] = {0.44,0.91,1.77}; 
+  //Double_t RaaPtStatErrCMS[3] = {0.10,0.38,0.76};
+  //Double_t RaaPtSystErrCMS1[3] = {0.06,0.13,0.24};
+  //Double_t RaaPtSystErrCMS2[3] = {0.04,0.08,0.15};
+  //Double_t RaaPtSystErrCMS[3] = {0.0};
+  
   //================= CMS Y1S Raa Vs Pt ===================================//
-  int nbinsPtCMS=3;
-  Double_t PtCMS[3]={3.03,8.04,13.17};
-  Double_t ErrPtCMS[3]={0};
-  Double_t RaaPtCMS[3] = {0.44,0.91,1.77}; 
-  Double_t RaaPtStatErrCMS[3] = {0.10,0.38,0.76};
-  Double_t RaaPtSystErrCMS1[3] = {0.06,0.13,0.24};
-  Double_t RaaPtSystErrCMS2[3] = {0.04,0.08,0.15};
-  Double_t RaaPtSystErrCMS[3] = {0.0};
- 
-  for(int j=0;j<3;j++){RaaPtSystErrCMS[j]=TMath::Sqrt(RaaPtSystErrCMS1[j]*RaaPtSystErrCMS1[j] + RaaPtSystErrCMS2[j]*RaaPtSystErrCMS2[j]);}
+  const int nbinsPt=5;
 
-  TGraphErrors *grRaaPtCMS = new TGraphErrors(nbinsPtCMS, PtCMS, RaaPtCMS, ErrPtCMS, RaaPtStatErrCMS);  
+  Double_t PtCMS[nbinsPt]={1.25,3.75,6.5,10.0,16.0};
+  Double_t ErrPtCMS[nbinsPt]={0};
+  
+  Double_t RaaPtCMS[nbinsPt] = {0.42,0.404,0.444,0.473,0.429}; 
+  Double_t RaaPtStatErrCMS[nbinsPt] = {0.028,0.0283,0.0333,0.0417,0.0477};
+  Double_t RaaPtSystErrCMS[nbinsPt] = {0.0636,0.0508,0.0722,0.051,0.0432};
+
+  
+  TGraphErrors *grRaaPtCMS = new TGraphErrors(nbinsPt, PtCMS, RaaPtCMS, ErrPtCMS, RaaPtStatErrCMS);  
   grRaaPtCMS->SetMarkerStyle(20);
   grRaaPtCMS->SetMarkerColor(4);
   grRaaPtCMS->GetYaxis()->SetRangeUser(0,3.0);
@@ -4893,12 +4945,9 @@ void Draw_CMS_Y1S_RaaVspT(TLegend *lgd)
    
   TAxis *Xaxis2 = grRaaPtCMS->GetXaxis();
   Xaxis2->SetLimits(0.,20.0);
-
   
-
-
   grRaaPtCMS->Draw("AP");
-
+  
   TLine *lh4 = new TLine(0.0,1.0,20.0,1.0);
   lh4->SetLineColor(1);
   lh4->SetLineStyle(1);
@@ -4914,25 +4963,228 @@ void Draw_CMS_Y1S_RaaVspT(TLegend *lgd)
   //tb->DrawLatex(0.55,0.22,"PbPb #sqrt{s_{NN}} = 2.76 TeV");
   //tb->DrawLatex(0.55,0.16,"#varUpsilon #rightarrow #mu^{+} #mu^{-}, p_{T}^{#varUpsilon} > 0.0 GeV/c");  
   
-  TBox *RaaPtJPsiCMSSys[3];
-  for(int j=0;j<3;j++){
-    RaaPtJPsiCMSSys[j] = new TBox(PtCMS[j]-0.1,  RaaPtCMS[j]-RaaPtSystErrCMS[j], PtCMS[j]+0.1,  RaaPtCMS[j]+RaaPtSystErrCMS[j]);
+  TBox *RaaPtCMSSys[nbinsPt];
+  for(int j=0;j<nbinsPt;j++){
+    RaaPtCMSSys[j] = new TBox(PtCMS[j]-0.5,  RaaPtCMS[j]-RaaPtSystErrCMS[j], PtCMS[j]+0.5,  RaaPtCMS[j]+RaaPtSystErrCMS[j]);
   }
   
-  for(int j=0;j<3;j++){
-    RaaPtJPsiCMSSys[j]->SetFillStyle(0000);
-    RaaPtJPsiCMSSys[j]->SetLineColor(4);
-    RaaPtJPsiCMSSys[j]->Draw("same"); 
+  for(int j=0;j<nbinsPt;j++){
+    RaaPtCMSSys[j]->SetFillStyle(0000);
+    RaaPtCMSSys[j]->SetLineColor(4);
+    RaaPtCMSSys[j]->Draw("same"); 
   }
-  
-  
-  TBox *CMSGlobalSysJPsiPt;
-  CMSGlobalSysJPsiPt = new TBox(18-0.2, 1 - 0.083, 18+0.2, 1 + 0.083);
-  CMSGlobalSysJPsiPt->SetFillStyle(3001);
-  CMSGlobalSysJPsiPt->SetLineColor(4);
-  CMSGlobalSysJPsiPt->SetFillColor(4);
-  CMSGlobalSysJPsiPt->Draw("same"); 
+    
+  TBox *CMSGlobalSysPt;
+  CMSGlobalSysPt = new TBox(18-0.2, 1 - 0.083, 18+0.2, 1 + 0.083);
+  CMSGlobalSysPt->SetFillStyle(3001);
+  CMSGlobalSysPt->SetLineColor(4);
+  CMSGlobalSysPt->SetFillColor(4);
+  //CMSGlobalSysPt->Draw("same"); 
     
   lgd->AddEntry(grRaaPtCMS,"CMS Data", "P");  
+
+  }
+
+
+
+
+void Draw_CMS_Y2S_RaaVspT(TLegend *lgd)
+{
+
+  //================= CMS Y2S Raa Vs Pt ===================================//
+  const int nbinsPt=3;
+
+  Double_t PtCMS[nbinsPt]={2.5,8.5,16.0};
+  Double_t ErrPtCMS[nbinsPt]={0};
+  
+  Double_t RaaPtCMS[nbinsPt] = {0.0821,0.0656,0.141}; 
+  Double_t RaaPtStatErrCMS[nbinsPt] = {0.0471,0.0457,0.0585};
+  Double_t RaaPtSystErrCMS[nbinsPt] = {0.0182,0.0115,0.025};
+  
+  TGraphErrors *grRaaPtCMS = new TGraphErrors(nbinsPt, PtCMS, RaaPtCMS, ErrPtCMS, RaaPtStatErrCMS);  
+  grRaaPtCMS->SetMarkerStyle(20);
+  grRaaPtCMS->SetMarkerColor(4);
+  grRaaPtCMS->GetYaxis()->SetRangeUser(-0.2,3.0);
+  grRaaPtCMS->GetXaxis()->SetTitle("p_{T}(GeV/c)");
+  grRaaPtCMS->GetYaxis()->SetTitle("R_{AA}");
+   
+  TAxis *Xaxis2 = grRaaPtCMS->GetXaxis();
+  Xaxis2->SetLimits(0.,20.0);
+  
+
+  grRaaPtCMS->Draw("AP");
+  
+  TLine *lh4 = new TLine(0.0,1.0,20.0,1.0);
+  lh4->SetLineColor(1);
+  lh4->SetLineStyle(1);
+  lh4->SetLineWidth(2);
+  lh4->Draw("same");
+
+
+  TLatex *tb= new TLatex;
+  tb->SetNDC(); 
+  tb->SetTextAlign(12);
+  tb->SetTextColor(1);
+  tb->SetTextSize(0.040);
+  //tb->DrawLatex(0.55,0.22,"PbPb #sqrt{s_{NN}} = 2.76 TeV");
+  //tb->DrawLatex(0.55,0.16,"#varUpsilon #rightarrow #mu^{+} #mu^{-}, p_{T}^{#varUpsilon} > 0.0 GeV/c");  
+  
+  TBox *RaaPtCMSSys[nbinsPt];
+  for(int j=0;j<nbinsPt;j++){
+    RaaPtCMSSys[j] = new TBox(PtCMS[j]-0.5,  RaaPtCMS[j]-RaaPtSystErrCMS[j], PtCMS[j]+0.5,  RaaPtCMS[j]+RaaPtSystErrCMS[j]);
+  }
+  
+  for(int j=0;j<nbinsPt;j++){
+    RaaPtCMSSys[j]->SetFillStyle(0000);
+    RaaPtCMSSys[j]->SetLineColor(4);
+    RaaPtCMSSys[j]->Draw("same"); 
+  }
+    
+  TBox *CMSGlobalSysPt;
+  CMSGlobalSysPt = new TBox(18-0.2, 1 - 0.083, 18+0.2, 1 + 0.083);
+  CMSGlobalSysPt->SetFillStyle(3001);
+  CMSGlobalSysPt->SetLineColor(4);
+  CMSGlobalSysPt->SetFillColor(4);
+  //CMSGlobalSysPt->Draw("same"); 
+    
+  lgd->AddEntry(grRaaPtCMS,"CMS Data", "P");  
+
+  }
+
+
+
+void Draw_CMS_Y1S_RaaVsRap(TLegend *lgd)
+{
+
+  //================= CMS Y(1S) Pt published ===================================//
+  //int nbinsPtCMS=3;
+  //Double_t PtCMS[3]={3.03,8.04,13.17};
+  //Double_t ErrPtCMS[3]={0};
+  //Double_t RaaPtCMS[3] = {0.44,0.91,1.77}; 
+  //Double_t RaaPtStatErrCMS[3] = {0.10,0.38,0.76};
+  //Double_t RaaPtSystErrCMS1[3] = {0.06,0.13,0.24};
+  //Double_t RaaPtSystErrCMS2[3] = {0.04,0.08,0.15};
+  //Double_t RaaPtSystErrCMS[3] = {0.0};
+  
+  //================= CMS Y1S Raa Vs Rap ===================================//
+  const int nbinsRap=6;
+
+  Double_t RapCMS[nbinsRap]={0.2,0.6,1.0,1.4,1.8,2.2};
+  Double_t ErrRapCMS[nbinsRap]={0};
+  
+  Double_t RaaRapCMS[nbinsRap] = {0.402,0.377,0.452,0.461,0.466,0.35}; 
+  Double_t RaaRapStatErrCMS[nbinsRap] = {0.025,0.025,0.030,0.034,0.039,0.053};
+  Double_t RaaRapSystErrCMS[nbinsRap] = {0.0404,0.038,0.046,0.0466,0.0484,0.0373};
+  
+  TGraphErrors *grRaaRapCMS = new TGraphErrors(nbinsRap, RapCMS, RaaRapCMS, ErrRapCMS, RaaRapStatErrCMS);  
+  grRaaRapCMS->SetMarkerStyle(20);
+  grRaaRapCMS->SetMarkerColor(4);
+  grRaaRapCMS->GetYaxis()->SetRangeUser(0,3.0);
+  grRaaRapCMS->GetXaxis()->SetTitle("p_{T}(GeV/c)");
+  grRaaRapCMS->GetYaxis()->SetTitle("R_{AA}");
+   
+  TAxis *Xaxis2 = grRaaRapCMS->GetXaxis();
+  Xaxis2->SetLimits(0.,2.4);
+  
+  grRaaRapCMS->Draw("AP");
+  
+  TLine *lh4 = new TLine(0.0,1.0,20.0,1.0);
+  lh4->SetLineColor(1);
+  lh4->SetLineStyle(1);
+  lh4->SetLineWidth(2);
+  lh4->Draw("same");
+
+
+  TLatex *tb= new TLatex;
+  tb->SetNDC(); 
+  tb->SetTextAlign(12);
+  tb->SetTextColor(1);
+  tb->SetTextSize(0.040);
+  //tb->DrawLatex(0.55,0.22,"PbPb #sqrt{s_{NN}} = 2.76 TeV");
+  //tb->DrawLatex(0.55,0.16,"#varUpsilon #rightarrow #mu^{+} #mu^{-}, p_{T}^{#varUpsilon} > 0.0 GeV/c");  
+  
+  TBox *RaaRapCMSSys[nbinsRap];
+  for(int j=0;j<nbinsRap;j++){
+    RaaRapCMSSys[j] = new TBox(RapCMS[j]-0.1,  RaaRapCMS[j]-RaaRapSystErrCMS[j], RapCMS[j]+0.1,  RaaRapCMS[j]+RaaRapSystErrCMS[j]);
+  }
+  
+  for(int j=0;j<nbinsRap;j++){
+    RaaRapCMSSys[j]->SetFillStyle(0000);
+    RaaRapCMSSys[j]->SetLineColor(4);
+    RaaRapCMSSys[j]->Draw("same"); 
+  }
+    
+  TBox *CMSGlobalSysRap;
+  CMSGlobalSysRap = new TBox(18-0.2, 1 - 0.083, 18+0.2, 1 + 0.083);
+  CMSGlobalSysRap->SetFillStyle(3001);
+  CMSGlobalSysRap->SetLineColor(4);
+  CMSGlobalSysRap->SetFillColor(4);
+  //CMSGlobalSysRap->Draw("same"); 
+    
+  lgd->AddEntry(grRaaRapCMS,"CMS Data", "P");  
+
+  }
+
+
+
+void Draw_CMS_Y2S_RaaVsRap(TLegend *lgd)
+{
+
+  
+  const int nbinsRap=2;
+
+  Double_t RapCMS[nbinsRap]={0.6,1.8};
+  Double_t ErrRapCMS[nbinsRap]={0};
+  
+  Double_t RaaRapCMS[nbinsRap] = {0.113,0.135}; 
+  Double_t RaaRapStatErrCMS[nbinsRap] = {0.033,0.048};
+  Double_t RaaRapSystErrCMS[nbinsRap] = {0.034,0.073};
+
+  TGraphErrors *grRaaRapCMS = new TGraphErrors(nbinsRap, RapCMS, RaaRapCMS, ErrRapCMS, RaaRapStatErrCMS);  
+  grRaaRapCMS->SetMarkerStyle(20);
+  grRaaRapCMS->SetMarkerColor(4);
+  grRaaRapCMS->GetYaxis()->SetRangeUser(-0.2,3.0);
+  grRaaRapCMS->GetXaxis()->SetTitle("p_{T}(GeV/c)");
+  grRaaRapCMS->GetYaxis()->SetTitle("R_{AA}");
+   
+  TAxis *Xaxis2 = grRaaRapCMS->GetXaxis();
+  Xaxis2->SetLimits(0.,2.4);
+  
+  grRaaRapCMS->Draw("AP");
+  
+  TLine *lh4 = new TLine(0.0,1.0,20.0,1.0);
+  lh4->SetLineColor(1);
+  lh4->SetLineStyle(1);
+  lh4->SetLineWidth(2);
+  lh4->Draw("same");
+
+
+  TLatex *tb= new TLatex;
+  tb->SetNDC(); 
+  tb->SetTextAlign(12);
+  tb->SetTextColor(1);
+  tb->SetTextSize(0.040);
+  //tb->DrawLatex(0.55,0.22,"PbPb #sqrt{s_{NN}} = 2.76 TeV");
+  //tb->DrawLatex(0.55,0.16,"#varUpsilon #rightarrow #mu^{+} #mu^{-}, p_{T}^{#varUpsilon} > 0.0 GeV/c");  
+  
+  TBox *RaaRapCMSSys[nbinsRap];
+  for(int j=0;j<nbinsRap;j++){
+    RaaRapCMSSys[j] = new TBox(RapCMS[j]-0.1,  RaaRapCMS[j]-RaaRapSystErrCMS[j], RapCMS[j]+0.1,  RaaRapCMS[j]+RaaRapSystErrCMS[j]);
+  }
+  
+  for(int j=0;j<nbinsRap;j++){
+    RaaRapCMSSys[j]->SetFillStyle(0000);
+    RaaRapCMSSys[j]->SetLineColor(4);
+    RaaRapCMSSys[j]->Draw("same"); 
+  }
+    
+  TBox *CMSGlobalSysRap;
+  CMSGlobalSysRap = new TBox(18-0.2, 1 - 0.083, 18+0.2, 1 + 0.083);
+  CMSGlobalSysRap->SetFillStyle(3001);
+  CMSGlobalSysRap->SetLineColor(4);
+  CMSGlobalSysRap->SetFillColor(4);
+  //CMSGlobalSysRap->Draw("same"); 
+    
+  lgd->AddEntry(grRaaRapCMS,"CMS Data", "P");  
 
   }
